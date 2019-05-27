@@ -20,6 +20,18 @@ class SeriesViewController: UIViewController{
         super.didReceiveMemoryWarning()
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let sellectedCell = sender  as? UICollectionViewCell,
+            let cellPosition = collectionView.indexPath(for: sellectedCell),
+            let viewController =  segue.destination as? SeriesDetailViewController
+            else {
+                return
+        }
+        let selected = defaultSeries[cellPosition.row]
+        viewController.set(data: selected)
+        
+    }
 }
  extension SeriesViewController:  UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -35,8 +47,18 @@ class SeriesViewController: UIViewController{
         
         return cell
     }
-    /*func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return SeriesViewCell.mEstimatedHeight
-    }*/
+    
+    func configure(collectionView: UICollectionView){
+        collectionView.dataSource = self
+        collectionView.delegate = self
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let size = collectionView.frame.width / 2
+        return CGSize(width: size , height: size )
+        
+    }
 
 }

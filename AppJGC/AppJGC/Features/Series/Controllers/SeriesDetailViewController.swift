@@ -12,6 +12,7 @@ class SeriesDetailViewController: UIViewController {
     
     @IBOutlet weak var mdetailImage: UIImageView!
     var mdetailName: String?
+    var mdata: Series? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,10 @@ class SeriesDetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
+    }
+    
+    func set(data series: Series) {
+       mdata = series
     }
     
     

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ilx-Nj-jpa">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Series-->
+        <scene sceneID="V79-Mh-qsz">
+            <objects>
+                <navigationController id="ilx-Nj-jpa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Series" image="iconSeries" id="yM4-1G-GoG"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sin-8Q-rKx">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1Qw-Ki-HZ4" kind="relationship" relationship="rootViewController" id="dNC-Xt-O78"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MyT-PP-bNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-988" y="151"/>
+        </scene>
+        <!--Top Series-->
+        <scene sceneID="gx8-SC-ecx">
+            <objects>
+                <viewController storyboardIdentifier="Series" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Qw-Ki-HZ4" customClass="SeriesViewController" customModule="AppJGC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sPJ-ch-TGX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ozr-tC-DeU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5kh-eJ-6aR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p4v-VD-DiP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="wgW-eR-xuS">
+                                    <size key="itemSize" width="187" height="229"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SeriesViewCell" id="q4x-ua-eNQ" customClass="SeriesViewCell" customModule="AppJGC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="229"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="187" height="229"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="10g-ak-zto">
+                                                    <rect key="frame" x="1" y="0.0" width="187" height="229"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tittle Serie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j1-Fc-riz">
+                                                    <rect key="frame" x="-8" y="195" width="206" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <size key="customSize" width="187" height="229"/>
+                                        <connections>
+                                            <outlet property="mImage" destination="10g-ak-zto" id="5qB-dT-2Xs"/>
+                                            <outlet property="mLabel" destination="2j1-Fc-riz" id="1H4-AE-DCK"/>
+                                            <segue destination="qpL-qr-cnk" kind="show" id="mqJ-IT-osE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ozr-tC-DeU" firstAttribute="top" secondItem="p4v-VD-DiP" secondAttribute="bottom" id="ams-lF-tq8"/>
+                            <constraint firstAttribute="trailing" secondItem="p4v-VD-DiP" secondAttribute="trailing" id="fgs-I1-L9Z"/>
+                            <constraint firstItem="p4v-VD-DiP" firstAttribute="leading" secondItem="5kh-eJ-6aR" secondAttribute="leading" id="xJf-nL-RWA"/>
+                            <constraint firstItem="p4v-VD-DiP" firstAttribute="top" secondItem="5kh-eJ-6aR" secondAttribute="top" id="zA8-bh-Mcb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Top Series" id="anG-hY-P9S"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="p4v-VD-DiP" id="8kz-eC-Fmq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1E-ZU-zw1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="151"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="2qA-pA-JI5">
+            <objects>
+                <viewController id="qpL-qr-cnk" customClass="SeriesDetailViewController" customModule="AppJGC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X3q-yg-dw4"/>
+                        <viewControllerLayoutGuide type="bottom" id="A1o-OC-fDs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cfp-zf-AR8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H1T-if-una">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                <color key="backgroundColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A1o-OC-fDs" firstAttribute="top" secondItem="H1T-if-una" secondAttribute="bottom" id="0fD-pS-2nD"/>
+                            <constraint firstItem="H1T-if-una" firstAttribute="leading" secondItem="Cfp-zf-AR8" secondAttribute="leading" id="UvG-Tz-rbW"/>
+                            <constraint firstItem="H1T-if-una" firstAttribute="top" secondItem="Cfp-zf-AR8" secondAttribute="top" id="VxJ-tA-Z8v"/>
+                            <constraint firstAttribute="trailing" secondItem="H1T-if-una" secondAttribute="trailing" id="nt2-Tf-xvz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="bUj-UX-afU"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="mdetailImage" destination="H1T-if-una" id="Gw8-l4-2V4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvk-A9-xfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconSeries" width="32" height="32"/>
+    </resources>
+</document>

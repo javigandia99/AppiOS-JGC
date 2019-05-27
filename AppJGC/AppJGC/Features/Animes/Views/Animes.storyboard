@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qEO-U4-k36">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top Animes-->
+        <scene sceneID="VWR-SE-64c">
+            <objects>
+                <viewController id="tSB-8U-qFv" customClass="AnimesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wW3-Wy-hMI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nxu-nr-CCp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C6M-cy-DzT">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AnimesDetailViewController" id="ATn-hW-kdS">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="YGk-Yn-Qhc" kind="show" id="DD1-NW-8gw"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LsF-vu-2kp" firstAttribute="trailing" secondItem="Nxu-nr-CCp" secondAttribute="trailing" id="7Gj-3q-Ezw"/>
+                            <constraint firstItem="Nxu-nr-CCp" firstAttribute="top" secondItem="LsF-vu-2kp" secondAttribute="top" id="JEV-Q2-bZg"/>
+                            <constraint firstItem="LsF-vu-2kp" firstAttribute="bottom" secondItem="Nxu-nr-CCp" secondAttribute="bottom" id="aME-sL-9fB"/>
+                            <constraint firstItem="Nxu-nr-CCp" firstAttribute="leading" secondItem="LsF-vu-2kp" secondAttribute="leading" id="wDh-eW-BPK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LsF-vu-2kp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Animes" image="iconAnimes" id="ESq-kg-Nzu"/>
+                    <navigationItem key="navigationItem" title="Top Animes" id="FXO-tg-HmJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="khg-RG-mfG"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8y2-Ua-ewb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3339.130434782609" y="-317.41071428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TWo-2s-QBA">
+            <objects>
+                <viewController id="YGk-Yn-Qhc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbI-rs-pzK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qxk-GQ-TdG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEF-tJ-9dz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4101" y="-317"/>
+        </scene>
+        <!--Animes-->
+        <scene sceneID="sJ5-Uf-4Be">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qEO-U4-k36" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Animes" image="iconAnimes" id="MYo-JU-6Xf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pId-ZE-J6Z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tSB-8U-qFv" kind="relationship" relationship="rootViewController" id="XRB-hl-LFv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Xz-tT-uIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2428.985507246377" y="-317.41071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconAnimes" width="32" height="32"/>
+    </resources>
+</document>

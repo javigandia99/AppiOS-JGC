@@ -25,7 +25,7 @@ class SeriesDetailViewController: UIViewController {
     }
     
     func set(data series: Series) {
-       mdata = series
+        mdata = series
     }
     
     

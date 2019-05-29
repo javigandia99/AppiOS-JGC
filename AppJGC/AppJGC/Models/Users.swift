@@ -6,7 +6,8 @@
 //  Copyright © 2019 Javier Gandia Calderón. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
 
 class Users: CustomStringConvertible {
     //Properties whit optional '?' value can be nil
@@ -44,4 +45,11 @@ class Users: CustomStringConvertible {
         self.phone = phone
         self.email = email
     }
+    /*
+    var icon: UIImage? {
+        guard let myIcon = photo else {
+            return
+        }
+        return UIImage(named: myIcon)
+    }*/
 }

@@ -13,7 +13,7 @@
         <!--Top Animes-->
         <scene sceneID="VWR-SE-64c">
             <objects>
-                <viewController id="tSB-8U-qFv" customClass="AnimesViewController" sceneMemberID="viewController">
+                <viewController id="tSB-8U-qFv" customClass="AnimesViewController" customModule="AppJGC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wW3-Wy-hMI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="3339.130434782609" y="-317.41071428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Animes Detail View Controller-->
         <scene sceneID="TWo-2s-QBA">
             <objects>
-                <viewController id="YGk-Yn-Qhc" sceneMemberID="viewController">
+                <viewController id="YGk-Yn-Qhc" customClass="AnimesDetailViewController" customModule="AppJGC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cbI-rs-pzK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

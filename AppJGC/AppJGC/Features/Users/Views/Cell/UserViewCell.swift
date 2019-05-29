@@ -26,6 +26,11 @@ class UserViewCell: UITableViewCell {
         mUseridLabel.text = nil
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        mStyle(view: mView)
+    }
+    
     func update(data user: Users?){
         update(image: user?.photo)
         update(name: user?.name)

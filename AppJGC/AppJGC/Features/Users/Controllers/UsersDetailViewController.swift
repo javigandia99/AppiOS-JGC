@@ -6,4 +6,19 @@
 //  Copyright © 2019 Javier Gandia Calderón. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+@IBOutlet weak var mdetailImage: UIImageView!
+var mdetailName: String?
+var mdetailImage: UIImage?
+
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+}
+
+override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    
+}

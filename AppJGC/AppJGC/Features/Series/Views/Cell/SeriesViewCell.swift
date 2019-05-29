@@ -9,10 +9,10 @@
 import UIKit
 
 class SeriesViewCell: UICollectionViewCell {
+    static let mIdentifier = String(describing: SeriesViewCell.self)
     
     @IBOutlet weak var mImage: UIImageView!
     @IBOutlet weak var mLabel: UILabel!
- 
     override func prepareForReuse() {
         mImage.image = nil
         mLabel.text = nil
@@ -24,12 +24,18 @@ class SeriesViewCell: UICollectionViewCell {
         
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
+    
     private func update(image: String?){
         guard let imageData = image else{
             return
         }
         
         mImage.image = UIImage(named: imageData)
+        
     }
     
     private func update(name: String?){

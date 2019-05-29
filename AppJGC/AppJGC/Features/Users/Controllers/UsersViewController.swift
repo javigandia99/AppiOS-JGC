@@ -8,11 +8,11 @@
 
 
 import UIKit
-var modelData = defaultAnimes
+
 class UsersViewController: UIViewController {
-    
-    
+  
     @IBOutlet weak var mTableView: UITableView!
+    var itemSpacing: CGFloat = 120
     
     override func viewDidLoad() {
         super.viewDidLoad()

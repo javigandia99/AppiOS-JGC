@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UsersDetailViewController.swift
 //  AppJGC
 //
 //  Created by Javier Gandia Calderón on 23/5/19.
@@ -7,19 +7,18 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
-
+class UsersDetailViewController: UIViewController {
+    
+    @IBOutlet weak var mdetailImage: UIImageView!
+    @IBOutlet weak var mdetailName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-    
-    
 }
-

@@ -11,6 +11,7 @@ class UsersDetailViewController: UIViewController {
     
     @IBOutlet weak var mdetailImage: UIImageView!
     @IBOutlet weak var mdetailName: UILabel!
+    var users = defaultUsers
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,4 +22,5 @@ class UsersDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
+    
 }

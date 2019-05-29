@@ -6,4 +6,7 @@
 //  Copyright © 2019 Javier Gandia Calderón. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class AnimesDetailViewController: UIViewController {
+}

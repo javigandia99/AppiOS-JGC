@@ -82,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				1D0606192297EF870095E21B /* Controllers */,
-				1D06061B2297EFDD0095E21B /* MoviesViewController.swift */,
 				1D0606182297EF7E0095E21B /* Views */,
 			);
 			path = Movies;
@@ -100,6 +99,7 @@
 		1D0606192297EF870095E21B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D06061B2297EFDD0095E21B /* MoviesViewController.swift */,
 				1D9464F8229C856500167A2E /* MoviesDetailViewController.swift */,
 			);
 			path = Controllers;
@@ -166,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				6575AEDD229683F10054C8BE /* Extensions */,
-				6575AEDC229683CE0054C8BE /* Models */,
 				6575AEDA229683C00054C8BE /* Data */,
 				6575AED9229683B70054C8BE /* Resources */,
 				6575AED5229683920054C8BE /* Features */,
@@ -233,6 +232,7 @@
 		6575AEDA229683C00054C8BE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				6575AEDC229683CE0054C8BE /* Models */,
 				6575AEDB229683C60054C8BE /* Type */,
 				6575AEF3229687770054C8BE /* SampleData.swift */,
 			);

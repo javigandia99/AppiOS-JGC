@@ -8,7 +8,7 @@
 
 import Foundation
 
-let defaultUsers: [Users] = [Users(photo: "user1",
+var defaultUsers: [Users] = [Users(photo: "user1",
                                    name: "Oliver",
                                    userid: "Oliver2019",
                                    email: "oliver19@gmail.com"),

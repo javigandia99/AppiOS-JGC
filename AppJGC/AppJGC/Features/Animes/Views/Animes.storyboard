@@ -51,7 +51,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LsF-vu-2kp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Animes" image="iconAnimes" id="ESq-kg-Nzu"/>
+                    <tabBarItem key="tabBarItem" title="Animes" image="iconAnimes" id="ESq-kg-Nzu">
+                        <color key="badgeColor" name="systemPurpleColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Top Animes" id="FXO-tg-HmJ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="khg-RG-mfG"/>
                     </navigationItem>

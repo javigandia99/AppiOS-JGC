@@ -12,12 +12,20 @@ import UIKit
 class UsersViewController: UIViewController {
   
     @IBOutlet weak var mTableView: UITableView!
-    var itemSpacing: CGFloat = 120
+    var itemSpacing: CGFloat = 150
+    var users = defaultUsers
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configure(TableView: mTableView)
+        
+    }
+    
+    
+    @IBAction func editing(sender: UIBarButtonItem) {
+        
+        self.isEditing = !self.isEditing
         
     }
 }
@@ -47,48 +55,45 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
     }
     
-   /* @IBAction func addUsers(sender: AnyObject){
-        //Creamos el UIAlertController
-        let alert = UIAlertController(title: "New User",
-                                      message: "Add user:",
-                                      preferredStyle: .alert)
+    
+    //si puede editarse o no, si return true,editable, si return false, no editable
+    func tableView(_ tableView: UITableView, canEditRowAt  indexpath: IndexPath) -> Bool {
+        return true
         
-        //Creamos el UIAlertAction que nos permitirá guardar la tarea
-        let save = UIAlertAction(title: "Save",
-                                       style: .default,
-                                       handler: { (action:UIAlertAction) -> Void in
-                                        
-        //Guardamos el texto del textField en el array tasks y recargamos la table view
-        let textField = alert.textFields!.first
-                                        self.saveTask(name:textField!.text!)
-                                        self.mTableView.reloadData()
-        })
-        
-        let cancel = UIAlertAction(title: "Cancel",
-                                         style: .default) { (action: UIAlertAction) -> Void in
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        //Añadimos el TextField al UIAlertController
-        alert.addTextField {
-            (textField: UITextField) -> Void in
-        }
-        
-        //Añadimos las dos UIAlertAction que hemos creado al UIAlertController
-        alert.addAction(save)
-        alert.addAction(cancel)
-        
-        //Lanzamos el UIAlertController
-        present(alert,
-                animated: true,
-                completion: nil)
     }
-    */
+    
+    //Desliza en la tableview para borrar la cell, no tiene persistencia de datos
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexpath: IndexPath) {
+        if editingStyle == .delete{
+            defaultUsers.remove(at: indexpath.row)
+            
+            mTableView.beginUpdates()
+            mTableView.deleteRows(at: [indexpath], with: .automatic)
+            mTableView.endUpdates()
+        }
+        
+    }
+   /*
+    private func tableView(tableView: UITableView, moveRowAtIndexPath IndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+        var itemToMove = mTableView?[IndexPath.row]
+        mTableView.removeAtIndex(IndexPath.row)
+        mTableView.insert(itemToMove, atIndex: toIndexPath.row)
+        
+    }*/
+}
+
+extension UsersViewController{
+    //funcion para pasar datos a UserDetail
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedPosition = sender as? IndexPath else {
+            return
+        }
+        
+        if let destinationController = segue.destination as? UsersDetailViewController {
+            
+            destinationController.users = [users[selectedPosition.row]]
+        }
+        
+    }
+    
 }

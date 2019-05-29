@@ -131,6 +131,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Users" image="iconUsers" id="mCh-hc-oYb"/>
                     <navigationItem key="navigationItem" title="Users List" id="q8C-tY-aog">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="X58-bc-WM5"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Tui-9Y-u96">
                             <connections>
                                 <action selector="addUsersWithSender:" destination="fvZ-oS-qRj" id="ZUH-ks-G4K"/>
@@ -166,7 +167,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lLa-Us-vxs">
+                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lLa-Us-vxs">
                                     <rect key="frame" x="0.0" y="0.0" width="343" height="335"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -195,15 +196,12 @@
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="5an-u9-fZu" id="Kv2-aW-J0r"/>
-                                </connections>
                             </collectionView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8fP-Sn-gAD">
                                 <rect key="frame" x="16" y="98" width="343" height="170"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDd-Jd-wMY">
-                                <rect key="frame" x="166.66666666666666" y="247" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDd-Jd-wMY">
+                                <rect key="frame" x="145.66666666666666" y="247" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

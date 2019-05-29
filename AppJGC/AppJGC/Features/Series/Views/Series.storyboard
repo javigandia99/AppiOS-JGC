@@ -63,7 +63,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="10g-ak-zto">
                                                     <rect key="frame" x="10" y="0.0" width="167" height="200"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tittle Serie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j1-Fc-riz">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tittle Serie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j1-Fc-riz">
                                                     <rect key="frame" x="10" y="193" width="167" height="36"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -132,16 +132,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H1T-if-una">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="636"/>
                                 <color key="backgroundColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="A1o-OC-fDs" firstAttribute="top" secondItem="H1T-if-una" secondAttribute="bottom" id="0fD-pS-2nD"/>
-                            <constraint firstItem="H1T-if-una" firstAttribute="leading" secondItem="Cfp-zf-AR8" secondAttribute="leading" id="UvG-Tz-rbW"/>
-                            <constraint firstItem="H1T-if-una" firstAttribute="top" secondItem="Cfp-zf-AR8" secondAttribute="top" id="VxJ-tA-Z8v"/>
-                            <constraint firstAttribute="trailing" secondItem="H1T-if-una" secondAttribute="trailing" id="nt2-Tf-xvz"/>
+                            <constraint firstAttribute="trailing" secondItem="H1T-if-una" secondAttribute="trailing" id="3NU-iI-F5R"/>
+                            <constraint firstItem="H1T-if-una" firstAttribute="top" secondItem="X3q-yg-dw4" secondAttribute="bottom" id="5aS-35-7iF"/>
+                            <constraint firstItem="H1T-if-una" firstAttribute="leading" secondItem="Cfp-zf-AR8" secondAttribute="leading" id="hQW-77-XCW"/>
+                            <constraint firstItem="H1T-if-una" firstAttribute="centerY" secondItem="Cfp-zf-AR8" secondAttribute="centerY" id="rxw-Il-QrW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="bUj-UX-afU"/>
@@ -149,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tvk-A9-xfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="152"/>
+            <point key="canvasLocation" x="676" y="151.47783251231527"/>
         </scene>
     </scenes>
     <resources>

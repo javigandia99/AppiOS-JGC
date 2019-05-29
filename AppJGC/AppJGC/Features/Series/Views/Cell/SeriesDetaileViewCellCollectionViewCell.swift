@@ -8,6 +8,6 @@
 
 import UIKit
 
-class SeriesDetaileViewCellCollectionViewCell: UICollectionViewCell {
+class SeriesDetailViewCell: UICollectionViewCell {
     
 }

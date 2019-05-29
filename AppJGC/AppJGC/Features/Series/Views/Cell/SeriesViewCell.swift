@@ -13,19 +13,21 @@ class SeriesViewCell: UICollectionViewCell {
     
     @IBOutlet weak var mImage: UIImageView!
     @IBOutlet weak var mLabel: UILabel!
+    var series = defaultSeries
+    
+    
     override func prepareForReuse() {
         mImage.image = nil
         mLabel.text = nil
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
     func update(data serie: Series?){
         update(image: serie?.photo)
         update(name: serie?.name)
-        
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
         
     }
     

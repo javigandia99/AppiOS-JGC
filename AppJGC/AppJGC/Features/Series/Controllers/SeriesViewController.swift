@@ -56,7 +56,6 @@ extension SeriesViewController:  UICollectionViewDelegate, UICollectionViewDataS
         collectionView.delegate = self
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = (collectionView.frame.width / 2.0) - (itemSpacing / 2)
         return CGSize(width: size,
@@ -71,3 +70,4 @@ extension SeriesViewController:  UICollectionViewDelegate, UICollectionViewDataS
         return itemSpacing
     }
 }
+

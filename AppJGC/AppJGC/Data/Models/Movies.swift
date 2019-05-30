@@ -6,7 +6,6 @@
 //  Copyright © 2019 Javier Gandia Calderón. All rights reserved.
 //
 
-
 import Foundation
 class Movies: CustomStringConvertible {
     //Properties whit optional '?' value can be nil

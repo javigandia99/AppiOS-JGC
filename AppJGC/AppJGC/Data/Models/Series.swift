@@ -8,12 +8,13 @@
 
 import Foundation
 class Series: CustomStringConvertible {
-    //Properties whit optional '?' value can be nil
+    
     var photo: String?
     var name: String?
     var review: String?
     var director: String?
-    var runtime: Int?
+    var runtime: String?
+    var seasons: String?
     var genres: String?
     var  date: Date?
     
@@ -32,15 +33,15 @@ class Series: CustomStringConvertible {
     }
     
     // Custom init (Constructor) class with default values
-    convenience init(photo: String? = nil, name: String? = nil, review: String? = nil, director: String?=nil , runtime: Int? = nil, genres: String? = nil, date: Date? = nil) {
+    convenience init(photo: String? = nil, name: String? = nil, review: String? = nil, director: String?=nil , runtime: String? = nil, seasons: String? = nil , genres: String? = nil, date: Date? = nil) {
         self.init()
         
-        // Always init all properties
         self.photo = photo
         self.name = name
         self.review = review
         self.runtime = runtime
         self.director = director
+        self.seasons = seasons
         self.genres = genres
         self.date = date
         

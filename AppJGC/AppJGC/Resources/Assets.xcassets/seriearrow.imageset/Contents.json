@@ -6,11 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "seriearrow.png",
+      "filename" : "seriesarrow.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "seriearrow.png",
       "scale" : "3x"
     }
   ],

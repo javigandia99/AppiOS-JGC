@@ -23,6 +23,7 @@ class UsersViewController: UIViewController {
     }
     
     
+    
     @IBAction func editing(sender: UIBarButtonItem) {
         
         self.isEditing = !self.isEditing
@@ -55,7 +56,6 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
     }
     
-    
     //si puede editarse o no, si return true,editable, si return false, no editable
     func tableView(_ tableView: UITableView, canEditRowAt  indexpath: IndexPath) -> Bool {
         return true
@@ -66,17 +66,17 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexpath: IndexPath) {
         if editingStyle == .delete{
             defaultUsers.remove(at: indexpath.row)
-            
             mTableView.beginUpdates()
             mTableView.deleteRows(at: [indexpath], with: .automatic)
             mTableView.endUpdates()
         }
         
     }
-   /*
-    private func tableView(tableView: UITableView, moveRowAtIndexPath IndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-        var itemToMove = mTableView?[IndexPath.row]
-        mTableView.removeAtIndex(IndexPath.row)
+    
+    /*
+    private func tableView(_ tableView: UITableView, moveRowAtIndexPath IndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+        var itemToMove = tableView[IndexPath.row]
+        tableView.removeAtIndex(IndexPath.row)
         mTableView.insert(itemToMove, atIndex: toIndexPath.row)
         
     }*/

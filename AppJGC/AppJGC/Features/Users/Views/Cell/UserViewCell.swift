@@ -18,7 +18,6 @@ class UserViewCell: UITableViewCell {
     @IBOutlet weak var mEmailLabel: UILabel!
     @IBOutlet weak var mUseridLabel: UILabel!
     
-    
     override func prepareForReuse() {
         mImageView.image = nil
         mNameLabel.text = nil
@@ -29,6 +28,10 @@ class UserViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         mStyle(view: mView)
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool){
+        super.setSelected (selected, animated: animated)
     }
     
     func update(data user: Users?){

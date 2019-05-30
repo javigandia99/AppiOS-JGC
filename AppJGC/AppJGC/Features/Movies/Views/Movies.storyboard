@@ -12,7 +12,7 @@
         <!--Top Movies-->
         <scene sceneID="znS-Uh-Xye">
             <objects>
-                <collectionViewController id="oEX-Kf-UbR" customClass="MoviesViewController" customModule="AppJGC" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="Movies" id="oEX-Kf-UbR" customClass="MoviesViewController" customModule="AppJGC" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Lfr-tL-nbW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoviesViewCell" id="TeU-q3-ml2">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoviesViewCell" id="TeU-q3-ml2" customClass="MoviesViewCell" customModule="AppJGC" customModuleProvider="target">
                                 <rect key="frame" x="103.5" y="0.0" width="207" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -61,6 +61,9 @@
                     <tabBarItem key="tabBarItem" title="Movies" image="iconMovies" id="apq-L4-hcG"/>
                     <navigationItem key="navigationItem" title="Top Movies" id="T5o-54-6d0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Lfr-tL-nbW" id="EFU-xO-MfL"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3n-cK-Ouu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

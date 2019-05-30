@@ -88,7 +88,7 @@
                                         <connections>
                                             <outlet property="mImage" destination="10g-ak-zto" id="5qB-dT-2Xs"/>
                                             <outlet property="mLabel" destination="2j1-Fc-riz" id="1H4-AE-DCK"/>
-                                            <segue destination="qpL-qr-cnk" kind="presentation" id="mqJ-IT-osE"/>
+                                            <segue destination="jrS-D5-vrD" kind="show" id="KRw-DD-mSQ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -119,37 +119,42 @@
             </objects>
             <point key="canvasLocation" x="-122.40000000000001" y="150.73891625615764"/>
         </scene>
-        <!--Title-->
-        <scene sceneID="2qA-pA-JI5">
+        <!--View Controller-->
+        <scene sceneID="vdP-8W-MFB">
             <objects>
-                <viewController id="qpL-qr-cnk" customClass="SeriesDetailViewController" customModule="AppJGC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jrS-D5-vrD" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="X3q-yg-dw4"/>
-                        <viewControllerLayoutGuide type="bottom" id="A1o-OC-fDs"/>
+                        <viewControllerLayoutGuide type="top" id="l3J-wS-Uxe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qay-lc-wFh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Cfp-zf-AR8">
+                    <view key="view" contentMode="scaleToFill" id="BjK-0B-9AT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H1T-if-una">
-                                <rect key="frame" x="0.0" y="88" width="375" height="636"/>
-                                <color key="backgroundColor" red="0.2195796371" green="0.2196240723" blue="0.21957683559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ViU-P6-7Tf">
+                                <rect key="frame" x="16" y="96" width="167" height="200"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mNameLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRU-kL-ShZ">
+                                <rect key="frame" x="226" y="96" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="H1T-if-una" secondAttribute="trailing" id="3NU-iI-F5R"/>
-                            <constraint firstItem="H1T-if-una" firstAttribute="top" secondItem="X3q-yg-dw4" secondAttribute="bottom" id="5aS-35-7iF"/>
-                            <constraint firstItem="H1T-if-una" firstAttribute="leading" secondItem="Cfp-zf-AR8" secondAttribute="leading" id="hQW-77-XCW"/>
-                            <constraint firstItem="H1T-if-una" firstAttribute="centerY" secondItem="Cfp-zf-AR8" secondAttribute="centerY" id="rxw-Il-QrW"/>
+                            <constraint firstItem="FRU-kL-ShZ" firstAttribute="top" secondItem="l3J-wS-Uxe" secondAttribute="bottom" constant="8" symbolic="YES" id="8Q0-x7-xXI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FRU-kL-ShZ" secondAttribute="trailing" constant="32" id="Uk3-pc-yVz"/>
+                            <constraint firstItem="ViU-P6-7Tf" firstAttribute="leading" secondItem="BjK-0B-9AT" secondAttribute="leadingMargin" id="c7p-hD-Nva"/>
+                            <constraint firstItem="Qay-lc-wFh" firstAttribute="top" secondItem="ViU-P6-7Tf" secondAttribute="bottom" constant="433" id="mKP-sv-wNe"/>
+                            <constraint firstItem="FRU-kL-ShZ" firstAttribute="leading" secondItem="ViU-P6-7Tf" secondAttribute="trailing" constant="43" id="muV-i0-UAs"/>
+                            <constraint firstItem="FRU-kL-ShZ" firstAttribute="top" secondItem="ViU-P6-7Tf" secondAttribute="top" id="vuS-3H-dmc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="bUj-UX-afU"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tvk-A9-xfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eu0-d1-qju" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="151.47783251231527"/>
+            <point key="canvasLocation" x="788" y="151"/>
         </scene>
     </scenes>
     <resources>

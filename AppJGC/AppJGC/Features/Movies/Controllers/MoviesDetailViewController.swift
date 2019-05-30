@@ -9,4 +9,11 @@
 import UIKit
 
 class MoviesDetailViewController: UIViewController {
+    var mdata: Movies?
+    
+    func set(data movies: Movies) {
+        mdata = movies
+    }
+    
 }
+

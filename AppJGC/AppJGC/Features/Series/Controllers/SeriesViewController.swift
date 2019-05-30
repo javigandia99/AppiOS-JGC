@@ -24,8 +24,8 @@ class SeriesViewController: UIViewController{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let sellectedCell = sender  as? UICollectionViewCell,
-            let cellPosition = collectionView.indexPath(for: sellectedCell),
+        guard let selectedCell = sender  as? UICollectionViewCell,
+            let cellPosition = collectionView.indexPath(for: selectedCell),
             let viewController =  segue.destination as? SeriesDetailViewController
             else {
                 return

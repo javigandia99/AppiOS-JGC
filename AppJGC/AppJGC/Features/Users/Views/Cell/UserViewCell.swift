@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserViewCell: UITableViewCell {
+class UsersViewCell: UITableViewCell {
     static let mIdentifier = String(describing: UserViewCell.self)
     static let mHeight: CGFloat = 120.0
     

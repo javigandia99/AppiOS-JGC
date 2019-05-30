@@ -1,15 +1,15 @@
 //
-//  AnimesViewCell.swift
+//  UserViewCell.swift
 //  AppJGC
 //
-//  Created by Javier Gandia on 30/05/2019.
+//  Created by Javier Gandia Calderón on 23/5/19.
 //  Copyright © 2019 Javier Gandia Calderón. All rights reserved.
 //
 
 import UIKit
 
-class AnimesViewCell: UITableViewCell {
-    static let mIdentifier = String(describing: AnimesViewCell.self)
+class UsersViewCell: UITableViewCell {
+    static let mIdentifier = String(describing: UsersViewCell.self)
     static let mHeight: CGFloat = 120.0
     
     @IBOutlet weak var mView: UIView!
@@ -34,7 +34,7 @@ class AnimesViewCell: UITableViewCell {
         super.setSelected (selected, animated: animated)
     }
     
-    func update(data user: Users?){
+    func update(data user: Users?) {
         update(image: user?.photo)
         update(name: user?.name)
         update(email: user?.email)
@@ -58,4 +58,5 @@ class AnimesViewCell: UITableViewCell {
     private func update(userid: String?){
         mUseridLabel.text = userid
     }
+    
 }

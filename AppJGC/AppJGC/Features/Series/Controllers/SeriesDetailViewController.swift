@@ -11,17 +11,29 @@ import UIKit
 class SeriesDetailViewController: UIViewController {
     
     @IBOutlet weak var mdetailImage: UIImageView!
-    var mdetailName: String?
+    @IBOutlet weak var mdetailName: UILabel!
+   
     var mdata: Series? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        update(image: mdata?.photo)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
+    }
+    
+    private func update(image: String?){
+        guard let imageData = image else{
+            return
+        }
+        
+        mdetailImage.image = UIImage(named: imageData)
+    }
+    private func update(name: String?){
+        mdetailName.text = name
     }
     
     func set(data series: Series) {

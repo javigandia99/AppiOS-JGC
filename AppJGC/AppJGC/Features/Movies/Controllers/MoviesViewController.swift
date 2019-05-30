@@ -22,24 +22,12 @@ class MoviesViewController: UIViewController {
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let sellectedCell = sender  as? UICollectionViewCell,
-            let cellPosition = collectionView.indexPath(for: sellectedCell),
-            let viewController =  segue.destination as? MoviesDetailViewController
-            else {
-                return
-        }
-        
-        let selected = defaultMovies[cellPosition.row]
-        viewController.set(data: selected)
-        
-    }
 }
 
 extension MoviesViewController:  UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return defaultSeries.count
+        return defaultMovies.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -68,5 +56,21 @@ extension MoviesViewController:  UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return itemSpacing
+    }
+}
+
+extension MoviesViewController{
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let sellectedCell = sender  as? UICollectionViewCell,
+            let cellPosition = collectionView.indexPath(for: sellectedCell),
+            let viewController =  segue.destination as? MoviesDetailViewController
+            else {
+                return
+        }
+        
+        let selected = defaultMovies[cellPosition.row]
+        viewController.set(data: selected)
+        
     }
 }

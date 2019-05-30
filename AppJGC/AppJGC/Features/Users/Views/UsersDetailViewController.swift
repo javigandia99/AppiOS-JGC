@@ -7,29 +7,35 @@
 //
 
 import UIKit
+
 class UsersDetailViewController: UIViewController {
     
     @IBOutlet weak var mdetailImage: UIImageView!
     @IBOutlet weak var mdetailName: UILabel!
-    @IBOutlet weak var mdetailreview: UILabel!
+    @IBOutlet weak var mdetailUserid: UILabel!
+    
     var users = defaultUsers
+    var mdata: Users? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        update(image: mdata?.photo)
+        update(name: mdata?.name)
+        update(userid: mdata?.userid)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
+    func set(data users: Users) {
+        mdata = users
+    }
     
-    func update(data user: Users?){
-        update(image: user?.photo)
-       update(name: user?.name)
+   
         /*update(email: user?.email)
         update(userid: user?.userid)*/
-    }
+    
     
     private func update(image: String?){
         guard let imageData = image else{
@@ -39,9 +45,19 @@ class UsersDetailViewController: UIViewController {
        mdetailImage.image = UIImage(named: imageData)
     }
     
+    
+    func viewWillAppear(animated: Bool){
+        super.viewDidAppear(animated)
+        
+    }
+    
     private func update(name: String?){
          mdetailName.text = name
-    }/*
+    }
+    private func update(userid: String?){
+        mdetailUserid.text = userid
+    }
+    /*
     private func update(email: String?){
         mEmailLabel.text = email
     }

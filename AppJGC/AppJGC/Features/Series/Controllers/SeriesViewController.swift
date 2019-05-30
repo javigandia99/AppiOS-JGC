@@ -37,7 +37,7 @@ class SeriesViewController: UIViewController{
 }
 
 extension SeriesViewController:  UICollectionViewDelegate, UICollectionViewDataSource {
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return defaultSeries.count
     }

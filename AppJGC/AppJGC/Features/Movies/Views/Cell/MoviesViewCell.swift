@@ -29,7 +29,6 @@ class MoviesViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        mStyle(view: mView)
     }
     
     func update(data movie: Movies?){
@@ -44,7 +43,6 @@ class MoviesViewCell: UITableViewCell {
         guard let imageData = image else{
             return
         }
-        
         mImageView.image = UIImage(named: imageData)
     }
     

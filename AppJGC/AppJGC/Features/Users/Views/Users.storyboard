@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="34" width="375" height="695"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="1" reuseIdentifier="UserViewCell" rowHeight="120" id="3cp-6f-zKc" userLabel="MCell View" customClass="UserViewCell" customModule="AppJGC" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="1" reuseIdentifier="UsersViewCell" rowHeight="120" id="3cp-6f-zKc" userLabel="MCell View" customClass="UsersViewCell" customModule="AppJGC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3cp-6f-zKc" id="awz-o5-5hb">
@@ -115,10 +115,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="fvZ-oS-qRj" id="WoP-3K-6j6"/>
-                                    <outlet property="delegate" destination="fvZ-oS-qRj" id="09T-8N-MMT"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -206,17 +202,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mReviewLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxu-1B-Fay">
+                                <rect key="frame" x="16" y="289" width="343" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="QPG-Q6-CMA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bxu-1B-Fay" firstAttribute="trailing" secondItem="8fP-Sn-gAD" secondAttribute="trailing" id="Fn4-V4-orP"/>
                             <constraint firstAttribute="bottomMargin" secondItem="lWV-rM-zjT" secondAttribute="bottom" constant="-10" id="KUq-CP-tn0"/>
                             <constraint firstItem="lWV-rM-zjT" firstAttribute="leading" secondItem="8fP-Sn-gAD" secondAttribute="leading" id="LUs-7W-CSe"/>
                             <constraint firstItem="ZDd-Jd-wMY" firstAttribute="bottom" secondItem="8fP-Sn-gAD" secondAttribute="bottom" id="LaO-Cv-fWG"/>
                             <constraint firstItem="lWV-rM-zjT" firstAttribute="trailing" secondItem="8fP-Sn-gAD" secondAttribute="trailing" id="Rck-hM-kCZ"/>
+                            <constraint firstItem="bxu-1B-Fay" firstAttribute="leading" secondItem="8fP-Sn-gAD" secondAttribute="leading" id="WD5-2B-ROh"/>
                             <constraint firstItem="8fP-Sn-gAD" firstAttribute="leading" secondItem="bMs-Ic-ydW" secondAttribute="leadingMargin" id="cA9-jX-Pg3"/>
                             <constraint firstItem="ZDd-Jd-wMY" firstAttribute="centerX" secondItem="8fP-Sn-gAD" secondAttribute="centerX" id="cCs-WF-si7"/>
                             <constraint firstItem="ZDd-Jd-wMY" firstAttribute="centerX" secondItem="bMs-Ic-ydW" secondAttribute="centerX" id="kc8-Qt-UNa"/>
                             <constraint firstItem="ZDd-Jd-wMY" firstAttribute="top" secondItem="aAM-kZ-wHe" secondAttribute="top" constant="159" id="mXO-LS-oTC"/>
+                            <constraint firstItem="lWV-rM-zjT" firstAttribute="top" secondItem="bxu-1B-Fay" secondAttribute="bottom" constant="19" id="mto-g7-0jb"/>
                             <constraint firstItem="8fP-Sn-gAD" firstAttribute="top" secondItem="aAM-kZ-wHe" secondAttribute="top" constant="10" id="uFN-Gi-OJi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aAM-kZ-wHe"/>
@@ -224,6 +232,7 @@
                     <connections>
                         <outlet property="mdetailImage" destination="8fP-Sn-gAD" id="dyG-ja-F7d"/>
                         <outlet property="mdetailName" destination="ZDd-Jd-wMY" id="4DV-C9-iq1"/>
+                        <outlet property="mdetailUserid" destination="bxu-1B-Fay" id="x6h-a8-hFz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V3Z-E8-GtZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

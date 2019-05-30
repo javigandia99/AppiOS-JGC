@@ -6,9 +6,7 @@
 //  Copyright © 2019 Javier Gandia Calderón. All rights reserved.
 //
 
-import UIKit
-
-
+import Foundation
 class Users: CustomStringConvertible {
     //Properties whit optional '?' value can be nil
     var photo: String?

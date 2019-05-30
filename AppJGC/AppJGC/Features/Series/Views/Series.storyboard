@@ -92,10 +92,6 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="1Qw-Ki-HZ4" id="BWw-23-vga"/>
-                                    <outlet property="delegate" destination="1Qw-Ki-HZ4" id="0z4-Xy-Xvg"/>
-                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -119,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="-122.40000000000001" y="150.73891625615764"/>
         </scene>
-        <!--View Controller-->
+        <!--Series Detail View Controller-->
         <scene sceneID="vdP-8W-MFB">
             <objects>
-                <viewController id="jrS-D5-vrD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Series Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jrS-D5-vrD" customClass="SeriesDetailViewController" customModule="AppJGC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l3J-wS-Uxe"/>
                         <viewControllerLayoutGuide type="bottom" id="Qay-lc-wFh"/>
@@ -151,6 +147,9 @@
                             <constraint firstItem="FRU-kL-ShZ" firstAttribute="top" secondItem="ViU-P6-7Tf" secondAttribute="top" id="vuS-3H-dmc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mdetailImage" destination="ViU-P6-7Tf" id="dZi-dc-QJe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eu0-d1-qju" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

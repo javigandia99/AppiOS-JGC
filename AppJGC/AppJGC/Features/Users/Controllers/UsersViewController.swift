@@ -21,14 +21,6 @@ class UsersViewController: UIViewController {
         configure(TableView: mTableView)
         
     }
-    
-    
-    
-    @IBAction func editing(sender: UIBarButtonItem) {
-        
-        self.isEditing = !self.isEditing
-        
-    }
 }
 
 extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
@@ -43,15 +35,15 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UserViewCell.mHeight
+        return UsersViewCell.mHeight
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
         UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: UserViewCell.mIdentifier,
+            let cell = tableView.dequeueReusableCell(withIdentifier: UsersViewCell.mIdentifier,
                                                      for: indexPath)
             
-            (cell as? UserViewCell)?.update(data: defaultUsers[indexPath.row])
+            (cell as? UsersViewCell)?.update(data: defaultUsers[indexPath.row])
             
             return cell
     }
@@ -93,7 +85,5 @@ extension UsersViewController{
             
             destinationController.users = [users[selectedPosition.row]]
         }
-        
     }
-    
 }

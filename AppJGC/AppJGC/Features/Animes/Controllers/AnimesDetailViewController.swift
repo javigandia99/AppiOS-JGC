@@ -9,4 +9,17 @@
 import UIKit
 
 class AnimesDetailViewController: UIViewController {
+    
+    var animes = defaultAnimes
+    var mdata: Animes? = nil
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    
+    func set(data animes: Animes) {
+        mdata = animes
+    }
 }

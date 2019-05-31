@@ -14,18 +14,13 @@ class AnimesViewCell: UITableViewCell {
     
     @IBOutlet weak var mView: UIView!
     @IBOutlet weak var mImageView: UIImageView!
-    @IBOutlet weak var mNameLabel: UILabel!
-    @IBOutlet weak var mEmailLabel: UILabel!
-    @IBOutlet weak var mUseridLabel: UILabel!
     
     override func prepareForReuse() {
         mImageView.image = nil
-        mNameLabel.text = nil
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        mStyle(view: mView)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool){
@@ -34,7 +29,7 @@ class AnimesViewCell: UITableViewCell {
     
     func update(data user: Animes?){
         update(image: user?.photo)
-        update(name: user?.name)
+        
     }
     
     private func update(image: String?){
@@ -43,9 +38,5 @@ class AnimesViewCell: UITableViewCell {
         }
         
         mImageView.image = UIImage(named: imageData)
-    }
-    
-    private func update(name: String?){
-        mNameLabel.text = name
     }
 }

@@ -31,7 +31,10 @@ var defaultUsers: [Users] = [Users(photo: "userhombrecristiano",
                              Users(photo: "userhombrejapones",
                                    name: "Jimmy",
                                    userid: "jimmykawasaki",
-                                   email: "jimyytdk@gmail.com"),
+                                   email: "jimyytdk@gmail.com"
+                                   /*,mSeries:["Arrow"],
+                                   mMovies:["Avatar"] ,
+                                   mAnimes: ["Berserk"]*/),
                              Users(photo: "usermujerdetec",
                                    name: "Ana",
                                    userid: "analpd",
@@ -49,7 +52,7 @@ var defaultUsers: [Users] = [Users(photo: "userhombrecristiano",
                                    userid: "lota1819",
                                    email: "marian13@gmail.com")]
 
-let defaultSeries: [Series] = [Series(photo:"seriegameofthethrones",
+var defaultSeries: [Series] = [Series(photo:"seriegameofthethrones",
                                       name: "The Game Of Thrones",
                                       review: "In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.",
                                       director: "David Benioff, D.B. Weiss",
@@ -143,7 +146,7 @@ let defaultSeries: [Series] = [Series(photo:"seriegameofthethrones",
                                       date:  Calendar.current.date(from: DateComponents(year: 1990,
                                                                                         month: 9, day: 2 )))]
 
-let defaultMovies: [Movies] = [Movies(photo: "movieavatar",
+var defaultMovies: [Movies] = [Movies(photo: "movieavatar",
                                       name: "Avatar",
                                       review: "",
                                       director: "",
@@ -235,7 +238,7 @@ let defaultMovies: [Movies] = [Movies(photo: "movieavatar",
                                       genres: "Action | Adventure | Crime | Mystery | Thriller")
 ]
 
-let defaultAnimes: [Animes] = [Animes(photo: "animeberserk",
+var defaultAnimes: [Animes] = [Animes(photo: "animeberserk",
                                       name: "Berserk",
                                       review: ""),
                                Animes(photo: "animecodegeas",

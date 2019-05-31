@@ -15,6 +15,10 @@ class Users: CustomStringConvertible {
     var userid: String?
     var phone: String?
     var email: String?
+    var mSeries: [Series]?
+    var mMovies: [Movies]?
+    var mAnimes: [Animes]?
+    
     
     // Use description var of CustomStringConvertible
     // to print this class with custom String format
@@ -32,7 +36,7 @@ class Users: CustomStringConvertible {
     }
     
     // Custom init (Constructor) class with default values
-    convenience init(photo: String? = nil, name: String? = nil, surname: String? = nil, userid: String? = nil, phone: String? = nil, address: String? = nil, email: String? = nil) {
+    convenience init(photo: String? = nil, name: String? = nil, surname: String? = nil, userid: String? = nil, phone: String? = nil, address: String? = nil, email: String? = nil, mSeries: [Series]? = nil, mMovies: [Movies]? = nil, mAnimes: [Animes]? = nil) {
         self.init()
         
         // Always init all properties
@@ -42,6 +46,9 @@ class Users: CustomStringConvertible {
         self.userid = userid
         self.phone = phone
         self.email = email
+        self.mSeries = mSeries
+        self.mMovies = mMovies
+        self.mAnimes = mAnimes
     }
     /*
     var icon: UIImage? {

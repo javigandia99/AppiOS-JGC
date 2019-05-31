@@ -10,7 +10,6 @@
 import UIKit
 
 class UsersViewController: UIViewController {
-  
     @IBOutlet weak var mTableView: UITableView!
     var itemSpacing: CGFloat = 150
     var users = defaultUsers
@@ -71,7 +70,7 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
         if editingStyle == .delete{
             defaultUsers.remove(at: indexpath.row)
             mTableView.beginUpdates()
-            mTableView.deleteRows(at: [indexpath], with: .automatic)
+            mTableView.deleteRows(at: [indexpath], with: .fade)
             mTableView.endUpdates()
         } else if editingStyle == .insert{
             print("add")

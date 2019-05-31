@@ -10,12 +10,12 @@ import UIKit
 
 class SeriesViewController: UIViewController{
     
-    @IBOutlet weak var collectionView: UICollectionView!
-    var itemSpacing: CGFloat = 12
+    @IBOutlet weak var mCollectionView: UICollectionView!
+    var itemSpacing: CGFloat = 200
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure(collectionView: collectionView)
+        configure( collectionView: mCollectionView)
     }
     
     override func didReceiveMemoryWarning() {
@@ -25,7 +25,7 @@ class SeriesViewController: UIViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let selectedCell = sender  as? UICollectionViewCell,
-            let cellPosition = collectionView.indexPath(for: selectedCell),
+            let cellPosition = mCollectionView.indexPath(for: selectedCell),
             let viewController =  segue.destination as? SeriesDetailViewController
             else {
                 return
@@ -44,18 +44,18 @@ extension SeriesViewController:  UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SeriesViewCell.mIdentifier, for: indexPath)
+        let cell = mCollectionView.dequeueReusableCell(withReuseIdentifier: SeriesViewCell.mIdentifier, for: indexPath)
         
         (cell as? SeriesViewCell)?.update(data: defaultSeries[indexPath.row])
         
         return cell
     }
     
-    func configure(collectionView: UICollectionView){
-        collectionView.dataSource = self
-        collectionView.delegate = self
+    func configure( collectionView: UICollectionView){
+        mCollectionView.dataSource = self
+        mCollectionView.delegate = self
     }
-    
+   
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = (collectionView.frame.width / 2.0) - (itemSpacing / 2)
         return CGSize(width: size,

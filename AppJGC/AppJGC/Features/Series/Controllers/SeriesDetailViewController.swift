@@ -29,6 +29,7 @@ class SeriesDetailViewController: UIViewController {
         update(director: mdata?.director)
         update(runtime: mdata?.runtime)
         update(genres: mdata?.genres)
+         update(date: mdata?.date)
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,7 +44,6 @@ class SeriesDetailViewController: UIViewController {
         
         mdetailImage.image = UIImage(named: imageData)
     }
-   
     private func update(name: String?){
         mdetailName.text = name
     }
@@ -59,16 +59,9 @@ class SeriesDetailViewController: UIViewController {
     private func update(genres: String?){
         mdetailGenres.text = genres
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    private func update(date: Date?) {
+        mdetailDate?.text = date?.toFormattedString(with: defaultDateFormatYear)
+    }
     
     
     

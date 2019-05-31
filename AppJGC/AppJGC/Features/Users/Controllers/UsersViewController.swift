@@ -18,14 +18,26 @@ class UsersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configure(TableView: mTableView)
+        configure(tableView: mTableView)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedCell = sender  as? UITableViewCell,
+            let cellPosition = mTableView.indexPath(for: selectedCell),
+            let viewController =  segue.destination as? UsersDetailViewController
+            else {
+                return
+        }
+        let selected = defaultUsers[cellPosition.row]
+        viewController.set(data: selected)
         
     }
 }
 
 extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
     
-    private func configure(TableView: UITableView){
+    private func configure(tableView: UITableView){
         mTableView.dataSource = self
         mTableView.delegate = self
     }
@@ -61,6 +73,8 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
             mTableView.beginUpdates()
             mTableView.deleteRows(at: [indexpath], with: .automatic)
             mTableView.endUpdates()
+        } else if editingStyle == .insert{
+            print("add")
         }
         
     }
@@ -73,7 +87,7 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
         
     }*/
 }
-
+/*
 extension UsersViewController{
     //funcion para pasar datos a UserDetail
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -86,4 +100,4 @@ extension UsersViewController{
             destinationController.users = [users[selectedPosition.row]]
         }
     }
-}
+}*/

@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoviesViewCell" id="EJ1-ri-TeH">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoviesViewCell" id="EJ1-ri-TeH" customClass="MoviesViewCell" customModule="AppJGC" customModuleProvider="target">
                                 <rect key="frame" x="105.5" y="0.0" width="203" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -42,6 +42,9 @@
                                     <constraint firstAttribute="trailing" secondItem="TfS-c5-K3J" secondAttribute="trailing" id="euV-b9-oDR"/>
                                     <constraint firstItem="TfS-c5-K3J" firstAttribute="leading" secondItem="EJ1-ri-TeH" secondAttribute="leading" id="gmt-HY-BeR"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="mImageView" destination="TfS-c5-K3J" id="W0s-86-fiJ"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                     </collectionView>

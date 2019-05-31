@@ -16,6 +16,7 @@ class AnimesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configure(TableView: mTableView)
         
         self.view.backgroundColor = UIColor.green
         
@@ -70,7 +71,7 @@ extension AnimesViewController: UITableViewDataSource, UITableViewDelegate {
         
     }
     
-    //Desliza en la tableview para borrar la cell, no tiene persistencia de datos
+    //Desliza en la tableview para borrar la cell, no tiene persistencia de datos, por lo que no se borrara del defaultdata
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexpath: IndexPath) {
         if editingStyle == .delete{
             defaultUsers.remove(at: indexpath.row)

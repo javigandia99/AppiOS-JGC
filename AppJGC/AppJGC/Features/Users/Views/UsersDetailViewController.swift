@@ -32,10 +32,6 @@ class UsersDetailViewController: UIViewController {
         mdata = users
     }
     
-   
-        /*update(email: user?.email)
-        update(userid: user?.userid)*/
-    
     
     private func update(image: String?){
         guard let imageData = image else{
@@ -67,5 +63,6 @@ class UsersDetailViewController: UIViewController {
     private func update(description: String?){
         mNameLabel.text = name
     }*/
+    
     
 }

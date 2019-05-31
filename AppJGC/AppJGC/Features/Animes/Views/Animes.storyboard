@@ -41,6 +41,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="mImageView" destination="a1k-qs-c4o" id="iHD-aI-Jb1"/>
+                                            <outlet property="mView" destination="o3a-D3-tpM" id="Qyr-Ud-SvI"/>
                                             <segue destination="YGk-Yn-Qhc" kind="show" id="ybM-vq-Sab"/>
                                         </connections>
                                     </tableViewCell>
@@ -75,17 +77,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-65-nHb">
-                                <rect key="frame" x="20" y="108" width="374" height="150"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-65-nHb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mDetailName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kU-xh-5DE">
+                                <rect key="frame" x="155" y="276" width="104" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mDetailReview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNq-Gb-snG">
+                                <rect key="frame" x="76" y="358" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="lT8-65-nHb" firstAttribute="trailing" secondItem="cbI-rs-pzK" secondAttribute="trailingMargin" id="Gtm-TL-Dix"/>
-                            <constraint firstItem="lT8-65-nHb" firstAttribute="leading" secondItem="cbI-rs-pzK" secondAttribute="leadingMargin" id="r2F-Uq-4Do"/>
-                            <constraint firstItem="qxk-GQ-TdG" firstAttribute="bottom" secondItem="lT8-65-nHb" secondAttribute="bottom" constant="555" id="tV2-Z3-uoD"/>
-                            <constraint firstItem="lT8-65-nHb" firstAttribute="top" secondItem="qxk-GQ-TdG" secondAttribute="top" constant="20" id="u4C-7U-xVV"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qxk-GQ-TdG"/>
                     </view>
                 </viewController>

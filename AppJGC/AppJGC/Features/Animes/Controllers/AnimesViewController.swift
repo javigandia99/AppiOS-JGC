@@ -18,10 +18,11 @@ class AnimesViewController: UIViewController {
         
         configure(TableView: mTableView)
         
-        
         self.view.backgroundColor = UIColor.green
         
+    
         gradientLayer.frame = self.view.bounds
+        
         let color1 = UIColor.yellow.cgColor as CGColor
         let color2 = UIColor(red: 1.0, green: 0, blue: 0, alpha: 1.0).cgColor as CGColor
         let color3 = UIColor.clear.cgColor as CGColor
@@ -36,18 +37,6 @@ class AnimesViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let selectedCell = sender  as? UITableViewCell,
-            let cellPosition = mTableView.indexPath(for: selectedCell),
-            let viewController =  segue.destination as? AnimesDetailViewController
-            else {
-                return
-        }
-        let selected = defaultAnimes[cellPosition.row]
-        viewController.set(data: selected)
-        
     }
 }
 
@@ -68,10 +57,10 @@ extension AnimesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
         UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: AnimesViewCell.mIdentifier,
+            let cell = tableView.dequeueReusableCell(withIdentifier: UsersViewCell.mIdentifier,
                                                      for: indexPath)
             
-            (cell as? AnimesViewCell)?.update(data: defaultAnimes[indexPath.row])
+            (cell as? UsersViewCell)?.update(data: defaultUsers[indexPath.row])
             
             return cell
     }
@@ -85,11 +74,11 @@ extension AnimesViewController: UITableViewDataSource, UITableViewDelegate {
     //Desliza en la tableview para borrar la cell, no tiene persistencia de datos, por lo que no se borrara del defaultdata
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexpath: IndexPath) {
         if editingStyle == .delete{
-            defaultAnimes.remove(at: indexpath.row)
+            defaultUsers.remove(at: indexpath.row)
             mTableView.beginUpdates()
             mTableView.deleteRows(at: [indexpath], with: .automatic)
             mTableView.endUpdates()
         }
         
-    }
+}
 }

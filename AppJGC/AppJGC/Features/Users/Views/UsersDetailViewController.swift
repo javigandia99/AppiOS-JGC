@@ -13,10 +13,6 @@ class UsersDetailViewController: UIViewController {
     @IBOutlet weak var mdetailImage: UIImageView!
     @IBOutlet weak var mdetailName: UILabel!
     @IBOutlet weak var mdetailUserid: UILabel!
-    @IBOutlet weak var mdetailEmail: UILabel!
-    @IBOutlet weak var mSeriesCollectionView: UICollectionView!
-    @IBOutlet weak var mAnimesCollectionView: UICollectionView!
-    @IBOutlet weak var mMoviesCollectionView: UICollectionView!
     
     var users = defaultUsers
     var mdata: Users? = nil
@@ -26,7 +22,6 @@ class UsersDetailViewController: UIViewController {
         update(image: mdata?.photo)
         update(name: mdata?.name)
         update(userid: mdata?.userid)
-        update(email: mdata?.email)
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,6 +31,7 @@ class UsersDetailViewController: UIViewController {
     func set(data users: Users) {
         mdata = users
     }
+    
     
     private func update(image: String?){
         guard let imageData = image else{
@@ -57,11 +53,16 @@ class UsersDetailViewController: UIViewController {
     private func update(userid: String?){
         mdetailUserid.text = userid
     }
-    
+    /*
     private func update(email: String?){
-        mdetailEmail.text = email
+        mEmailLabel.text = email
     }
-   
+    private func update(userid: String?){
+        mUseridLabel.text = userid
+    }
+    private func update(description: String?){
+        mNameLabel.text = name
+    }*/
     
     
 }

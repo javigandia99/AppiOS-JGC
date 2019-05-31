@@ -64,9 +64,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="khg-RG-mfG"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="mTableView" destination="7Hs-g5-JFb" id="a5i-br-buJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8y2-Ua-ewb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

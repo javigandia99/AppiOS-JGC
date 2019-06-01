@@ -24,14 +24,16 @@ class Animes: CustomStringConvertible {
     var description: String {
         
         return """
-        Animes:
-        name: \(String(describing: name))
-        review: \(String(describing: review))
-        runtime: \(String(describing: runtime))
-        seasons: \(String(describing: seasons))
-        episodes: \(String(describing: episodes))
-        genres: \(String(describing: genres))
-        date: \(String(describing: date))
+        Name: \(String(describing: name))
+        Review: \(String(describing: review))
+        
+        Runtime: \(String(describing: runtime))
+        Seasons: \(String(describing: seasons))
+        
+        Episodes: \(String(describing: episodes))
+        Genres: \(String(describing: genres))
+        
+        Date: \(String(describing: date))
         """
     }
     

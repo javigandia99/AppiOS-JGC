@@ -26,13 +26,8 @@ class AnimesDetailViewController: UIViewController {
         super.viewDidLoad()
         update(image: mdata?.photo)
         update(name: mdata?.name)
-        update(review: mdata?.review)
-        update(runtime: mdata?.runtime)
-        update(seasons: mdata?.seasons)
-        update(episodes: mdata?.episodes)
-        update(genres: mdata?.genres)
-        update(date: mdata?.date)
         update(dimage: mdata?.photodetail)
+        update(description: mdata?.description)
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,20 +48,8 @@ class AnimesDetailViewController: UIViewController {
     private func update(name: String?){
         mdetailName.text = name
     }
-    private func update(review: String?){
-        mdetailReview.text = review
-    }
-    private func update(runtime: String?){
-        mdetailRuntime.text = runtime
-    }
-    private func update(seasons: String?){
-        mdetailSeasons.text = seasons
-    }
-    private func update(episodes: String?){
-        mdetailEpisodes.text = episodes
-    }
-    private func update(genres: String?){
-        mdetailGenres.text = genres
+    private func update(description: String?){
+        mdetailReview.text = description
     }
     private func update(dimage: String?){
         guard let imagedData = dimage else{
@@ -75,7 +58,5 @@ class AnimesDetailViewController: UIViewController {
         
         mImage.image = UIImage(named: imagedData)
     }
-    private func update(date: Date?) {
-        mdetailDate?.text = date?.toFormattedString(with: defaultDateFormatYear)
-    }
+    
 }

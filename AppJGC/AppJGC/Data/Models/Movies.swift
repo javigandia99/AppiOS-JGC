@@ -23,12 +23,11 @@ class Movies: CustomStringConvertible {
         
         // With """ we can print a multiline String
         return """
-        Series:
-        name: \(String(describing: name))
-        review: \(String(describing: review))
-        director:  \(String(describing: director))
-        runtime:  \(String(describing: runtime))
-        genres: \(String(describing: genres))
+        Name: \(String(describing: name))
+        Review: \(String(describing: review))
+        Director:  \(String(describing: director))
+        Runtime:  \(String(describing: runtime))
+        Genres: \(String(describing: genres))
         """
     }
     

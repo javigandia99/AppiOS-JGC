@@ -13,7 +13,6 @@ class Users: CustomStringConvertible {
     var name: String?
     var surname: String?
     var userid: String?
-    var phone: String?
     var email: String?
     
     // Use description var of CustomStringConvertible
@@ -22,17 +21,15 @@ class Users: CustomStringConvertible {
         
         // With """ we can print a multiline String
         return """
-        Users:
-        name: \(String(describing: name))
-        surname: \(String(describing: surname))
-        userid: \(String(describing: userid))
-        phone: \(String(describing: phone))
-        email: \(String(describing: email))
+        Name: \(String(describing: name))
+        Surname: \(String(describing: surname))
+        Userid: \(String(describing: userid))
+        Email: \(String(describing: email))
         """
     }
     
     // Custom init (Constructor) class with default values
-    convenience init(photo: String? = nil, name: String? = nil, surname: String? = nil, userid: String? = nil, phone: String? = nil, address: String? = nil, email: String? = nil) {
+    convenience init(photo: String? = nil, name: String? = nil, surname: String? = nil, userid: String? = nil, address: String? = nil, email: String? = nil) {
         self.init()
         
         // Always init all properties
@@ -40,14 +37,6 @@ class Users: CustomStringConvertible {
         self.name = name
         self.surname = surname
         self.userid = userid
-        self.phone = phone
         self.email = email
     }
-    /*
-    var icon: UIImage? {
-        guard let myIcon = photo else {
-            return
-        }
-        return UIImage(named: myIcon)
-    }*/
 }

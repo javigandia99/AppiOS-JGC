@@ -34,12 +34,12 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
                                                 </imageView>
                                                 <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mName" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtl-dR-XGR">
-                                                    <rect key="frame" x="20" y="148.5" width="374" height="41.5"/>
+                                                    <rect key="frame" x="20" y="149.5" width="374" height="40.5"/>
                                                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
                                                     <color key="textColor" red="0.017050979658961296" green="0.55960297584533691" blue="0.97118407487869263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="highlightedColor" red="0.017050979658961296" green="0.55960297584533691" blue="0.97118407487869263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <size key="shadowOffset" width="0.0" height="3"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                    <size key="shadowOffset" width="2" height="2"/>
                                                 </label>
                                             </subviews>
                                             <constraints>

@@ -16,6 +16,7 @@
 		1D5FDBE222A0078E002AB70F /* AnimesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5FDBE122A0078E002AB70F /* AnimesViewCell.swift */; };
 		1D5FDBE422A00856002AB70F /* MoviesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5FDBE322A00856002AB70F /* MoviesViewCell.swift */; };
 		1D6AE98522A2831500E52A85 /* Series.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6AE98722A2831500E52A85 /* Series.storyboard */; };
+		1D6AE98C22A294C500E52A85 /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6AE98E22A294C500E52A85 /* Users.storyboard */; };
 		1D922BCF229D557D00CBFC43 /* StyleExtensionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D922BCE229D557D00CBFC43 /* StyleExtensionTableViewCell.swift */; };
 		1D9464F9229C856500167A2E /* MoviesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9464F8229C856500167A2E /* MoviesDetailViewController.swift */; };
 		1D9464FB229C857D00167A2E /* AnimesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9464FA229C857D00167A2E /* AnimesDetailViewController.swift */; };
@@ -30,7 +31,6 @@
 		6575AEF02296873C0054C8BE /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575AEEF2296873C0054C8BE /* Series.swift */; };
 		6575AEF2229687510054C8BE /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575AEF1229687510054C8BE /* Users.swift */; };
 		6575AEF4229687770054C8BE /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575AEF3229687770054C8BE /* SampleData.swift */; };
-		6575AEF6229687CF0054C8BE /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6575AEF5229687CF0054C8BE /* Users.storyboard */; };
 		6575AEF9229688900054C8BE /* UsersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575AEF8229688900054C8BE /* UsersViewCell.swift */; };
 		6575AF0322968FCF0054C8BE /* SeriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575AF0222968FCF0054C8BE /* SeriesViewCell.swift */; };
 		6575AF0522968FE80054C8BE /* SeriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575AF0422968FE80054C8BE /* SeriesDetailViewController.swift */; };
@@ -52,6 +52,9 @@
 		1D6AE98622A2831500E52A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Series.storyboard; sourceTree = "<group>"; };
 		1D6AE98922A2831D00E52A85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Series.strings; sourceTree = "<group>"; };
 		1D6AE98B22A2832300E52A85 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Series.strings; sourceTree = "<group>"; };
+		1D6AE98D22A294C500E52A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Users.storyboard; sourceTree = "<group>"; };
+		1D6AE99022A294D200E52A85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Users.strings; sourceTree = "<group>"; };
+		1D6AE99222A294D400E52A85 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Users.strings; sourceTree = "<group>"; };
 		1D922BCE229D557D00CBFC43 /* StyleExtensionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleExtensionTableViewCell.swift; sourceTree = "<group>"; };
 		1D9464F8229C856500167A2E /* MoviesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailViewController.swift; sourceTree = "<group>"; };
 		1D9464FA229C857D00167A2E /* AnimesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimesDetailViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +73,6 @@
 		6575AEEF2296873C0054C8BE /* Series.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
 		6575AEF1229687510054C8BE /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		6575AEF3229687770054C8BE /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
-		6575AEF5229687CF0054C8BE /* Users.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Users.storyboard; path = AppJGC/Features/Users/Views/Users.storyboard; sourceTree = SOURCE_ROOT; };
 		6575AEF8229688900054C8BE /* UsersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewCell.swift; sourceTree = "<group>"; };
 		6575AF0222968FCF0054C8BE /* SeriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesViewCell.swift; sourceTree = "<group>"; };
 		6575AF0422968FE80054C8BE /* SeriesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesDetailViewController.swift; sourceTree = "<group>"; };
@@ -301,7 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				6575AEF72296886B0054C8BE /* Cell */,
-				6575AEF5229687CF0054C8BE /* Users.storyboard */,
+				1D6AE98E22A294C500E52A85 /* Users.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -420,7 +422,7 @@
 				1D6AE98522A2831500E52A85 /* Series.storyboard in Resources */,
 				1D06061E2297EFF10095E21B /* Movies.storyboard in Resources */,
 				6575AECD229683630054C8BE /* LaunchScreen.storyboard in Resources */,
-				6575AEF6229687CF0054C8BE /* Users.storyboard in Resources */,
+				1D6AE98C22A294C500E52A85 /* Users.storyboard in Resources */,
 				6575AECA229683620054C8BE /* Assets.xcassets in Resources */,
 				1DFFB560229F4427004FB8F6 /* Localizable.strings in Resources */,
 				6575AEC8229683600054C8BE /* Main.storyboard in Resources */,
@@ -471,6 +473,17 @@
 			);
 			name = Series.storyboard;
 			sourceTree = "<group>";
+		};
+		1D6AE98E22A294C500E52A85 /* Users.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D6AE98D22A294C500E52A85 /* Base */,
+				1D6AE99022A294D200E52A85 /* en */,
+				1D6AE99222A294D400E52A85 /* es */,
+			);
+			name = Users.storyboard;
+			path = AppJGC/Features/Users/Views;
+			sourceTree = SOURCE_ROOT;
 		};
 		1DFFB562229F4427004FB8F6 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;

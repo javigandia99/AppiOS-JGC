@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "User ID"; ObjectID = "GsN-vd-3ax"; */
+"GsN-vd-3ax.text" = "User ID";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "RxW-lL-Yeh"; */
+"RxW-lL-Yeh.text" = "User Name";
+
+/* Class = "UILabel"; text = "Labelname"; ObjectID = "ZDd-Jd-wMY"; */
+"ZDd-Jd-wMY.text" = "Labelname";
+
+/* Class = "UILabel"; text = "mReviewLabel"; ObjectID = "bxu-1B-Fay"; */
+"bxu-1B-Fay.text" = "mReviewLabel";
+
+/* Class = "UIViewController"; title = "Users"; ObjectID = "fvZ-oS-qRj"; */
+"fvZ-oS-qRj.title" = "Usuarios";
+
+/* Class = "UILabel"; text = "User Email"; ObjectID = "hI4-es-klp"; */
+"hI4-es-klp.text" = "User Email";
+
+/* Class = "UITabBarItem"; title = "Users"; ObjectID = "mCh-hc-oYb"; */
+"mCh-hc-oYb.title" = "Usuarios";
+
+/* Class = "UINavigationItem"; title = "Users List"; ObjectID = "q8C-tY-aog"; */
+"q8C-tY-aog.title" = "Lista de Usuarios";

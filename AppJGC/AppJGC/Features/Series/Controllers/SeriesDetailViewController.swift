@@ -15,6 +15,7 @@ class SeriesDetailViewController: UIViewController {
     @IBOutlet weak var mdetailReview: UILabel!
     @IBOutlet weak var mdetailDirector: UILabel!
     @IBOutlet weak var mdetailRuntime: UILabel!
+    @IBOutlet weak var mdetailSeasons: UILabel!
     @IBOutlet weak var mdetailGenres: UILabel!
     @IBOutlet weak var mdetailDate: UILabel!
     
@@ -28,6 +29,7 @@ class SeriesDetailViewController: UIViewController {
         update(review: mdata?.review)
         update(director: mdata?.director)
         update(runtime: mdata?.runtime)
+        update(seasons: mdata?.seasons)
         update(genres: mdata?.genres)
          update(date: mdata?.date)
     }
@@ -55,6 +57,9 @@ class SeriesDetailViewController: UIViewController {
     }
     private func update(runtime: String?){
         mdetailRuntime.text = runtime
+    }
+    private func update(seasons: String?){
+        mdetailSeasons.text = seasons
     }
     private func update(genres: String?){
         mdetailGenres.text = genres

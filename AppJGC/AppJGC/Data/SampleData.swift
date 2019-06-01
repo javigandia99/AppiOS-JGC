@@ -235,7 +235,7 @@ let defaultMovies: [Movies] = [Movies(photo: "movieavatar",
                                       genres: "Action | Adventure | Crime | Mystery | Thriller")
 ]
 
-let defaultAnimes: [Animes] = [Animes(photo: "animeberserk",
+var defaultAnimes: [Animes] = [Animes(photo: "animeberserk",
                                       name: "Berserk",
                                       review: ""),
                                Animes(photo: "animecodegeas",

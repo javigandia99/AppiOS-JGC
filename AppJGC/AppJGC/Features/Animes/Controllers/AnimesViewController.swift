@@ -10,28 +10,11 @@ import UIKit
 
 class AnimesViewController: UIViewController {
     @IBOutlet weak var mTableView: UITableView!
-    
-    let gradientLayer = CAGradientLayer()
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configure(TableView: mTableView)
-        
-        self.view.backgroundColor = UIColor.green
-        
-    
-        gradientLayer.frame = self.view.bounds
-        
-        let color1 = UIColor.yellow.cgColor as CGColor
-        let color2 = UIColor(red: 1.0, green: 0, blue: 0, alpha: 1.0).cgColor as CGColor
-        let color3 = UIColor.clear.cgColor as CGColor
-        let color4 = UIColor(white: 0.0, alpha: 0.7).cgColor as CGColor
-        gradientLayer.colors = [color1, color2, color3, color4]
-        
-        gradientLayer.locations = [0.0, 0.25, 0.75, 1.0]
-        
-        self.view.layer.addSublayer(gradientLayer)
         
     }
     
@@ -57,10 +40,10 @@ extension AnimesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
         UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: UsersViewCell.mIdentifier,
+            let cell = tableView.dequeueReusableCell(withIdentifier: AnimesViewCell.mIdentifier,
                                                      for: indexPath)
             
-            (cell as? UsersViewCell)?.update(data: defaultUsers[indexPath.row])
+            (cell as? AnimesViewCell)?.update(data: defaultAnimes[indexPath.row])
             
             return cell
     }
@@ -74,7 +57,7 @@ extension AnimesViewController: UITableViewDataSource, UITableViewDelegate {
     //Desliza en la tableview para borrar la cell, no tiene persistencia de datos, por lo que no se borrara del defaultdata
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexpath: IndexPath) {
         if editingStyle == .delete{
-            defaultUsers.remove(at: indexpath.row)
+            defaultAnimes.remove(at: indexpath.row)
             mTableView.beginUpdates()
             mTableView.deleteRows(at: [indexpath], with: .automatic)
             mTableView.endUpdates()

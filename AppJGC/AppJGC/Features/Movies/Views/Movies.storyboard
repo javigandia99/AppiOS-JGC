@@ -51,6 +51,9 @@
                     <tabBarItem key="tabBarItem" title="Movies" image="iconMovies" id="apq-L4-hcG"/>
                     <navigationItem key="navigationItem" title="Top Movies" id="T5o-54-6d0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mCollectionView" destination="VUd-OS-U1u" id="EEw-Cd-ToX"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3n-cK-Ouu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,13 +12,13 @@ class SeriesViewCell: UICollectionViewCell {
     static let mIdentifier = String(describing: SeriesViewCell.self)
     
     @IBOutlet weak var mImage: UIImageView!
-    @IBOutlet weak var mLabel: UILabel!
+    @IBOutlet weak var mName: UILabel!
     var series = defaultSeries
     
     
     override func prepareForReuse() {
         mImage.image = nil
-        mLabel.text = nil
+        mName.text = nil
     }
     
     override func awakeFromNib() {
@@ -41,7 +41,7 @@ class SeriesViewCell: UICollectionViewCell {
     }
     
     private func update(name: String?){
-        mLabel.text = name
+        mName.text = name
     }
     
 }

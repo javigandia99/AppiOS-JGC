@@ -39,7 +39,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S53-RZ-4b9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752" y="40"/>
+            <point key="canvasLocation" x="749" y="54"/>
         </scene>
         <!--Series-->
         <scene sceneID="Zht-8O-hwb">
@@ -49,7 +49,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJM-PJ-ctq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="118"/>
+            <point key="canvasLocation" x="750" y="117"/>
         </scene>
         <!--Movies-->
         <scene sceneID="RN9-M3-ano">
@@ -59,7 +59,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1c-AZ-Qxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="181"/>
+            <point key="canvasLocation" x="754" y="166"/>
         </scene>
         <!--Animes-->
         <scene sceneID="hDo-uv-rDt">
@@ -69,11 +69,11 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zc6-X3-cSX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="238"/>
+            <point key="canvasLocation" x="756" y="229"/>
         </scene>
     </scenes>
     <resources>
-        <image name="iconMovies" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="iconMovies" width="32" height="32"/>
         <image name="iconSeries" width="32" height="32"/>
         <image name="iconUsers" width="32" height="32"/>
     </resources>

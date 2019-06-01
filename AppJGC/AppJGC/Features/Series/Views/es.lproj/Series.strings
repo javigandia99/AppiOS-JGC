@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "Tittle Serie"; ObjectID = "2j1-Fc-riz"; */
+"2j1-Fc-riz.text" = "Tittle Serie";
+
+/* Class = "UILabel"; text = "Creator:"; ObjectID = "2oc-NB-jfh"; */
+"2oc-NB-jfh.text" = "Director:";
+
+/* Class = "UILabel"; text = "mdetailReview"; ObjectID = "Ap7-3s-jT5"; */
+"Ap7-3s-jT5.text" = "mdetailReview";
+
+/* Class = "UILabel"; text = "Realease date:"; ObjectID = "CaE-4A-BdR"; */
+"CaE-4A-BdR.text" = "Fecha de Estreno:";
+
+/* Class = "UILabel"; text = "mdetailName"; ObjectID = "FRU-kL-ShZ"; */
+"FRU-kL-ShZ.text" = "mdetailName";
+
+/* Class = "UILabel"; text = "mdetailDate"; ObjectID = "FwZ-C2-4L8"; */
+"FwZ-C2-4L8.text" = "mdetailDate";
+
+/* Class = "UILabel"; text = "Genres:"; ObjectID = "LLV-67-hTM"; */
+"LLV-67-hTM.text" = "Generos:";
+
+/* Class = "UILabel"; text = "mdetailDirector"; ObjectID = "Wtg-NP-5ZY"; */
+"Wtg-NP-5ZY.text" = "mdetailDirector";
+
+/* Class = "UINavigationItem"; title = "Top Series"; ObjectID = "anG-hY-P9S"; */
+"anG-hY-P9S.title" = "Mejores Series";
+
+/* Class = "UILabel"; text = "mdetailRuntime"; ObjectID = "cfB-4U-ZcF"; */
+"cfB-4U-ZcF.text" = "mdetailRuntime";
+
+/* Class = "UILabel"; text = "Runtime:"; ObjectID = "u2U-pk-LYo"; */
+"u2U-pk-LYo.text" = "Duracion:";
+
+/* Class = "UILabel"; text = "Review:"; ObjectID = "vQJ-XQ-wrg"; */
+"vQJ-XQ-wrg.text" = "Descripcion:";
+
+/* Class = "UILabel"; text = "mdetailGenres"; ObjectID = "wQQ-bG-deT"; */
+"wQQ-bG-deT.text" = "mdetailGenres";
+
+/* Class = "UITabBarItem"; title = "Series"; ObjectID = "yM4-1G-GoG"; */
+"yM4-1G-GoG.title" = "Series";

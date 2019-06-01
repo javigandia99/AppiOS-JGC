@@ -20,7 +20,6 @@ class AnimesViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         mImageView.image = nil
-        mNameLabel.text = nil
     }
     
     override func awakeFromNib() {
@@ -32,9 +31,8 @@ class AnimesViewCell: UITableViewCell {
         super.setSelected (selected, animated: animated)
     }
     
-    func update(data user: Animes?){
-        update(image: user?.photo)
-        update(name: user?.name)
+    func update(data anime: Animes?){
+        update(image: anime?.photo)
     }
     
     private func update(image: String?){
@@ -45,7 +43,4 @@ class AnimesViewCell: UITableViewCell {
         mImageView.image = UIImage(named: imageData)
     }
     
-    private func update(name: String?){
-        mNameLabel.text = name
-    }
 }

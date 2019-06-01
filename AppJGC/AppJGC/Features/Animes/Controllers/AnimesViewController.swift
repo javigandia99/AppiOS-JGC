@@ -21,6 +21,18 @@ class AnimesViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedCell = sender  as? UITableViewCell,
+            let cellPosition = mTableView.indexPath(for: selectedCell),
+            let viewController =  segue.destination as? AnimesDetailViewController
+            else {
+                return
+        }
+        let selected = defaultAnimes[cellPosition.row]
+        viewController.set(data: selected)
+        
+    }
 }
 
 extension AnimesViewController: UITableViewDataSource, UITableViewDelegate {

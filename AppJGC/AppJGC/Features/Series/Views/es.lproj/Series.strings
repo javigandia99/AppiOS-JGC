@@ -18,7 +18,7 @@
 "FwZ-C2-4L8.text" = "mdetailDate";
 
 /* Class = "UILabel"; text = "Genres:"; ObjectID = "LLV-67-hTM"; */
-"LLV-67-hTM.text" = "Generos:";
+"LLV-67-hTM.text" = "Géneros:";
 
 /* Class = "UILabel"; text = "mdetailDirector"; ObjectID = "Wtg-NP-5ZY"; */
 "Wtg-NP-5ZY.text" = "mdetailDirector";
@@ -30,10 +30,10 @@
 "cfB-4U-ZcF.text" = "mdetailRuntime";
 
 /* Class = "UILabel"; text = "Runtime:"; ObjectID = "u2U-pk-LYo"; */
-"u2U-pk-LYo.text" = "Duracion:";
+"u2U-pk-LYo.text" = "Duración:";
 
 /* Class = "UILabel"; text = "Review:"; ObjectID = "vQJ-XQ-wrg"; */
-"vQJ-XQ-wrg.text" = "Descripcion:";
+"vQJ-XQ-wrg.text" = "Descripción:";
 
 /* Class = "UILabel"; text = "mdetailGenres"; ObjectID = "wQQ-bG-deT"; */
 "wQQ-bG-deT.text" = "mdetailGenres";

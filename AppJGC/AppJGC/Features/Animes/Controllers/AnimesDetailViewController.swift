@@ -19,13 +19,15 @@ class AnimesDetailViewController: UIViewController {
     @IBOutlet weak var mdetailDate: UILabel!
     @IBOutlet weak var mdetailImage: UIImageView!
     
-    var users = defaultAnimes
+    var animes = defaultAnimes
     var mdata: Animes? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         update(image: mdata?.photo)
         update(name: mdata?.name)
+        update(review: mdata?.review)
+        update(runtime: mdata?.runtime)
         update(seasons: mdata?.seasons)
         update(episodes: mdata?.episodes)
         update(genres: mdata?.genres)
@@ -51,8 +53,14 @@ class AnimesDetailViewController: UIViewController {
     private func update(name: String?){
         mdetailName.text = name
     }
+    private func update(review: String?){
+        mdetailReview.text = review
+    }
+    private func update(runtime: String?){
+        mdetailRuntime.text = runtime
+    }
     private func update(seasons: String?){
-        mdetailReview.text = seasons
+        mdetailSeasons.text = seasons
     }
     private func update(episodes: String?){
         mdetailEpisodes.text = episodes

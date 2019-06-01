@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ilx-Nj-jpa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ilx-Nj-jpa">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,10 +36,6 @@
         <scene sceneID="gx8-SC-ecx">
             <objects>
                 <viewController storyboardIdentifier="Series" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Qw-Ki-HZ4" customClass="SeriesViewController" customModule="AppJGC" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sPJ-ch-TGX"/>
-                        <viewControllerLayoutGuide type="bottom" id="ozr-tC-DeU"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5kh-eJ-6aR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,11 +91,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ozr-tC-DeU" firstAttribute="top" secondItem="p4v-VD-DiP" secondAttribute="bottom" id="ams-lF-tq8"/>
-                            <constraint firstAttribute="trailing" secondItem="p4v-VD-DiP" secondAttribute="trailing" id="fgs-I1-L9Z"/>
-                            <constraint firstItem="p4v-VD-DiP" firstAttribute="leading" secondItem="5kh-eJ-6aR" secondAttribute="leading" id="xJf-nL-RWA"/>
+                            <constraint firstItem="iEf-T5-Woc" firstAttribute="bottom" secondItem="p4v-VD-DiP" secondAttribute="bottom" id="ams-lF-tq8"/>
+                            <constraint firstItem="iEf-T5-Woc" firstAttribute="trailing" secondItem="p4v-VD-DiP" secondAttribute="trailing" id="fgs-I1-L9Z"/>
+                            <constraint firstItem="p4v-VD-DiP" firstAttribute="leading" secondItem="iEf-T5-Woc" secondAttribute="leading" id="xJf-nL-RWA"/>
                             <constraint firstItem="p4v-VD-DiP" firstAttribute="top" secondItem="5kh-eJ-6aR" secondAttribute="top" id="zA8-bh-Mcb"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="iEf-T5-Woc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Top Series" id="anG-hY-P9S">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Pbv-Q2-Syk"/>
@@ -117,10 +115,6 @@
         <scene sceneID="vdP-8W-MFB">
             <objects>
                 <viewController storyboardIdentifier="Series Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jrS-D5-vrD" customClass="SeriesDetailViewController" customModule="AppJGC" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="l3J-wS-Uxe"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qay-lc-wFh"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BjK-0B-9AT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,11 +265,12 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Qay-lc-wFh" firstAttribute="top" secondItem="4tA-2F-2lf" secondAttribute="bottom" id="6VY-UE-1ho"/>
-                            <constraint firstAttribute="trailing" secondItem="4tA-2F-2lf" secondAttribute="trailing" id="7Hd-N2-jS9"/>
-                            <constraint firstItem="4tA-2F-2lf" firstAttribute="leading" secondItem="BjK-0B-9AT" secondAttribute="leading" id="Tx9-eU-T8b"/>
-                            <constraint firstItem="4tA-2F-2lf" firstAttribute="top" secondItem="l3J-wS-Uxe" secondAttribute="bottom" id="gdd-aY-1Jd"/>
+                            <constraint firstItem="dzn-ZC-72e" firstAttribute="bottom" secondItem="4tA-2F-2lf" secondAttribute="bottom" id="6VY-UE-1ho"/>
+                            <constraint firstItem="dzn-ZC-72e" firstAttribute="trailing" secondItem="4tA-2F-2lf" secondAttribute="trailing" id="7Hd-N2-jS9"/>
+                            <constraint firstItem="4tA-2F-2lf" firstAttribute="leading" secondItem="dzn-ZC-72e" secondAttribute="leading" id="Tx9-eU-T8b"/>
+                            <constraint firstItem="4tA-2F-2lf" firstAttribute="top" secondItem="dzn-ZC-72e" secondAttribute="top" id="gdd-aY-1Jd"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="dzn-ZC-72e"/>
                     </view>
                     <connections>
                         <outlet property="mdetailDate" destination="FwZ-C2-4L8" id="d77-Ib-4TI"/>

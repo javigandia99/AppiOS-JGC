@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "game_of_thrones_tv_series-293142110-large.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "seriesgameofthrones.jpg",
+      "filename" : "game_of_thrones_tv_series-293142110-large.jpg",
       "scale" : "2x"
     },
     {

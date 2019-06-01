@@ -28,11 +28,10 @@ class UsersDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
+    
     func set(data users: Users) {
         mdata = users
     }
-    
-    
     private func update(image: String?){
         guard let imageData = image else{
             return
@@ -40,13 +39,6 @@ class UsersDetailViewController: UIViewController {
         
        mdetailImage.image = UIImage(named: imageData)
     }
-    
-    
-    func viewWillAppear(animated: Bool){
-        super.viewDidAppear(animated)
-        
-    }
-    
     private func update(name: String?){
          mdetailName.text = name
     }
@@ -64,5 +56,8 @@ class UsersDetailViewController: UIViewController {
         mNameLabel.text = name
     }*/
     
-    
+    func viewWillAppear(animated: Bool){
+        super.viewDidAppear(animated)
+        
+    }
 }

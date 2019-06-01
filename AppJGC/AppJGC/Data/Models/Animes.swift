@@ -9,31 +9,45 @@
 
 import Foundation
 class Animes: CustomStringConvertible {
-    //Properties whit optional '?' value can be nil
+  
     var photo: String?
     var name: String?
     var review: String?
+    var runtime: String?
+    var seasons: String?
+    var episodes: String?
+    var genres: String?
+    var date: Date?
+    var photodetail: String?
     
-    // Use description var of CustomStringConvertible
-    // to print this class with custom String format
+    
     var description: String {
         
-        // With """ we can print a multiline String
         return """
-        Series:
+        Animes:
         name: \(String(describing: name))
         review: \(String(describing: review))
+        runtime: \(String(describing: runtime))
+        seasons: \(String(describing: seasons))
+        episodes: \(String(describing: episodes))
+        genres: \(String(describing: genres))
+        date: \(String(describing: date))
         """
     }
     
     // Custom init (Constructor) class with default values
-    convenience init(photo: String? = nil, name: String? = nil, review: String? = nil) {
+    convenience init(photo: String? = nil, name: String? = nil, review: String? = nil , runtime: String? = nil, seasons: String? = nil, episodes: String? = nil, genres: String? = nil, date: Date? = nil, photodetail: String? = nil) {
         self.init()
         
-        // Always init all properties
         self.photo = photo
         self.name = name
         self.review = review
+        self.runtime = runtime
+        self.seasons = seasons
+        self.episodes = episodes
+        self.genres = genres
+        self.date = date
+        self.photodetail = photodetail
         
     }
 }

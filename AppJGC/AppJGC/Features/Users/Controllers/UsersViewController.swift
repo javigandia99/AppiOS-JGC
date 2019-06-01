@@ -78,26 +78,4 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
     }
-    
-    /*
-    private func tableView(_ tableView: UITableView, moveRowAtIndexPath IndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-        var itemToMove = tableView[IndexPath.row]
-        tableView.removeAtIndex(IndexPath.row)
-        mTableView.insert(itemToMove, atIndex: toIndexPath.row)
-        
-    }*/
 }
-/*
-extension UsersViewController{
-    //funcion para pasar datos a UserDetail
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let selectedPosition = sender as? IndexPath else {
-            return
-        }
-        
-        if let destinationController = segue.destination as? UsersDetailViewController {
-            
-            destinationController.users = [users[selectedPosition.row]]
-        }
-    }
-}*/

@@ -10,13 +10,11 @@ import UIKit
 
 class AnimesViewCell: UITableViewCell {
     static let mIdentifier = String(describing: AnimesViewCell.self)
-    static let mHeight: CGFloat = 120.0
+    static let mHeight: CGFloat = 250
     
     @IBOutlet weak var mView: UIView!
     @IBOutlet weak var mImageView: UIImageView!
     @IBOutlet weak var mNameLabel: UILabel!
-    @IBOutlet weak var mEmailLabel: UILabel!
-    @IBOutlet weak var mUseridLabel: UILabel!
     
     override func prepareForReuse() {
         mImageView.image = nil
@@ -24,7 +22,6 @@ class AnimesViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        mStyle(view: mView)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool){
@@ -32,7 +29,8 @@ class AnimesViewCell: UITableViewCell {
     }
     
     func update(data anime: Animes?){
-        update(image: anime?.photo)
+        update(image: anime?.photodetail)
+        update(name: anime?.name)
     }
     
     private func update(image: String?){
@@ -41,6 +39,9 @@ class AnimesViewCell: UITableViewCell {
         }
         
         mImageView.image = UIImage(named: imageData)
+    }
+    private func update(name: String?){
+        mNameLabel.text = name
     }
     
 }

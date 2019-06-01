@@ -11,7 +11,7 @@ import UIKit
 extension UITableViewCell {
 
    func mStyle(view: UIView?, cornerRadius: CGFloat = 8.0, color: CGColor = UIColor.blue.cgColor) {
-        view?.layer.cornerRadius = cornerRadius
+    view?.layer.cornerRadius = cornerRadius
     view?.layer.shadowColor = color
     view?.layer.shadowOffset = CGSize.zero
     view?.layer.shadowRadius = cornerRadius

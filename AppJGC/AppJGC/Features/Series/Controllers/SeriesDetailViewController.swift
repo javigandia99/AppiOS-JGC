@@ -38,6 +38,10 @@ class SeriesDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
+  
+    func set(data series: Series) {
+        mdata = series
+    }
     
     private func update(image: String?){
         guard let imageData = image else{
@@ -68,11 +72,9 @@ class SeriesDetailViewController: UIViewController {
         mdetailDate?.text = date?.toFormattedString(with: defaultDateFormatYear)
     }
     
-    
-    
-    func set(data series: Series) {
-        mdata = series
+    func viewWillAppear(animated: Bool){
+        super.viewDidAppear(animated)
+        
     }
-    
     
 }

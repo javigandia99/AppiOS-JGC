@@ -14,6 +14,7 @@ extension UITableViewCell {
     view?.layer.cornerRadius = cornerRadius
     view?.layer.shadowColor = color
     view?.layer.shadowOffset = CGSize.zero
+    view?.layer.borderColor = color
     view?.layer.shadowRadius = cornerRadius
     }
 }

@@ -19,10 +19,7 @@ class Users: CustomStringConvertible {
     var description: String {
         
         return """
-        Name: \(String(describing: name))
-        Surname: \(String(describing: surname))
-        Userid: \(String(describing: userid))
-        Email: \(String(describing: email))
+        \(String(describing: name)) \(String(describing: surname))
         """
     }
     

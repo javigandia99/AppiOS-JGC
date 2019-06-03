@@ -167,7 +167,7 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O6S-df-IWa">
-                                <rect key="frame" x="16" y="295" width="343" height="434"/>
+                                <rect key="frame" x="16" y="296" width="343" height="433"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Li6-cF-xqP">
                                         <rect key="frame" x="0.0" y="94" width="343" height="128"/>
@@ -301,7 +301,7 @@
                                     <constraint firstItem="bxu-1B-Fay" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9f0-BX-ISP" secondAttribute="trailing" constant="8" symbolic="YES" id="gfe-lz-xBH"/>
                                     <constraint firstItem="bxu-1B-Fay" firstAttribute="trailing" secondItem="WBH-IR-fpx" secondAttribute="trailing" id="hdQ-sg-a65"/>
                                     <constraint firstItem="bIf-xL-fqH" firstAttribute="top" secondItem="9f0-BX-ISP" secondAttribute="bottom" constant="5" id="jGs-lg-hs3"/>
-                                    <constraint firstAttribute="bottom" secondItem="Li6-cF-xqP" secondAttribute="bottom" constant="212" id="jJz-lo-VUD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Li6-cF-xqP" secondAttribute="bottom" constant="211" id="jJz-lo-VUD"/>
                                     <constraint firstItem="BHw-PG-pOA" firstAttribute="leading" secondItem="O6S-df-IWa" secondAttribute="leadingMargin" id="kFL-fP-Msj"/>
                                     <constraint firstItem="Li6-cF-xqP" firstAttribute="top" secondItem="BHw-PG-pOA" secondAttribute="bottom" constant="8" symbolic="YES" id="pIc-q1-YT5"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BHw-PG-pOA" secondAttribute="trailing" constant="20" symbolic="YES" id="uwF-kx-fG1"/>
@@ -310,8 +310,8 @@
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDd-Jd-wMY">
-                                <rect key="frame" x="145.66666666666666" y="266" width="84" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="144.33333333333334" y="266" width="86.666666666666657" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>

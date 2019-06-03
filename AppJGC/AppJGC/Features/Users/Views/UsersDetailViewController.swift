@@ -23,7 +23,7 @@ class UsersDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         update(image: mdata?.photo)
-        update(name: mdata?.name)
+        update(description: mdata?.description)
         update(userid: mdata?.userid)
         update(email: mdata?.email)
     }
@@ -43,15 +43,15 @@ class UsersDetailViewController: UIViewController {
         
        mdetailImage.image = UIImage(named: imageData)
     }
-    private func update(name: String?){
-         mdetailName.text = name
-    }
     private func update(userid: String?){
         mdetailUserid.text = userid
     }
     
     private func update(email: String?){
         mdetailEmail.text = email
+    }
+    private func update(description: String?){
+        mdetailName.text = description
     }
 
     

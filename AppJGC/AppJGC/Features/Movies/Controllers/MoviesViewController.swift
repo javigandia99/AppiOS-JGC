@@ -11,7 +11,7 @@ import UIKit
 class MoviesViewController: UIViewController{
     
     @IBOutlet weak var mCollectionView: UICollectionView!
-    var itemSpacing: CGFloat = 200
+    var itemSpacing: CGFloat = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +57,7 @@ extension MoviesViewController:  UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = (collectionView.frame.width / 2.0) - (itemSpacing / 2)
+        let size = (collectionView.frame.width / 3 ) - (itemSpacing / 3)
         return CGSize(width: size,
                       height: size)
     }

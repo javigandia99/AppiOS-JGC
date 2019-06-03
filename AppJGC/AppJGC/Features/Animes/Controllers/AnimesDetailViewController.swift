@@ -52,11 +52,11 @@ class AnimesDetailViewController: UIViewController {
         mdetailReview.text = description
     }
     private func update(dimage: String?){
-        guard let imagedData = dimage else{
+        guard let imageData = dimage else{
             return
         }
         
-        mImage.image = UIImage(named: imagedData)
+        mImage.image = UIImage(named: imageData)
     }
     
 }

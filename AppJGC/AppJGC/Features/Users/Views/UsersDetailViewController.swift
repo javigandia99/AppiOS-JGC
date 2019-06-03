@@ -13,6 +13,9 @@ class UsersDetailViewController: UIViewController {
     @IBOutlet weak var mdetailImage: UIImageView!
     @IBOutlet weak var mdetailName: UILabel!
     @IBOutlet weak var mdetailUserid: UILabel!
+    @IBOutlet weak var mdetailEmail: UILabel!
+    @IBOutlet weak var mCollectionView: UICollectionView!
+    @IBOutlet weak var mViewCell: UICollectionViewCell!
     
     var users = defaultUsers
     var mdata: Users? = nil
@@ -22,6 +25,7 @@ class UsersDetailViewController: UIViewController {
         update(image: mdata?.photo)
         update(name: mdata?.name)
         update(userid: mdata?.userid)
+        update(email: mdata?.email)
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,19 +49,43 @@ class UsersDetailViewController: UIViewController {
     private func update(userid: String?){
         mdetailUserid.text = userid
     }
-    /*
+    
     private func update(email: String?){
-        mEmailLabel.text = email
+        mdetailEmail.text = email
     }
-    private func update(userid: String?){
-        mUseridLabel.text = userid
-    }
-    private func update(description: String?){
-        mNameLabel.text = name
-    }*/
+
     
     func viewWillAppear(animated: Bool){
         super.viewDidAppear(animated)
         
     }
+}
+
+
+extension UsersDetailViewController:  UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        /*var mSerieName =  defaultSeries.filter{ $0.name?.contains( where: { name in
+            guard let mSeries = Series.name else{
+                return false
+            }
+            
+            // Compare actual subject student name with student name
+            // return true if name are same
+            return mSeries.compare(Series) == .orderedSame }) ?? false}*/
+        return defaultUsers.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = mCollectionView.dequeueReusableCell(withReuseIdentifier: UsersViewCell.mIdentifier, for: indexPath)
+        
+        (cell as? SeriesViewCell)?.update(data: defaultSeries[indexPath.row])
+        
+        return cell
+}
+    func configure( collectionView: UICollectionView){
+        mCollectionView.dataSource = self
+        mCollectionView.delegate = self
+}
 }

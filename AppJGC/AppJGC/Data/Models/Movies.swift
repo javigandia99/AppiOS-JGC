@@ -16,12 +16,8 @@ class Movies: CustomStringConvertible {
     var runtime: String?
     var genres: String?
     var  date: Date?
-    
-    // Use description var of CustomStringConvertible
-    // to print this class with custom String format
     var description: String {
         
-        // With """ we can print a multiline String
         return """
         Name: \(String(describing: name))
         Review: \(String(describing: review))
@@ -31,11 +27,10 @@ class Movies: CustomStringConvertible {
         """
     }
     
-    // Custom init (Constructor) class with default values
+     //Constructor with default values
     convenience init(photo: String? = nil, name: String? = nil, review: String? = nil, director: String? = nil , runtime: String? = nil, genres: String? = nil, date: Date? = nil) {
-        self.init()
         
-        // Always init all properties
+        self.init()
         self.photo = photo
         self.name = name
         self.review = review

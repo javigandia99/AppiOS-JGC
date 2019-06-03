@@ -10,7 +10,6 @@ import UIKit
 class MoviesViewCell: UICollectionViewCell {
     static let mIdentifier = String(describing: MoviesViewCell.self)
     
-    @IBOutlet weak var mView: UIView!
     @IBOutlet weak var mImageView: UIImageView!
     
     var movies = defaultMovies

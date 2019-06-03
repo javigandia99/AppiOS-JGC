@@ -40,3 +40,6 @@
 
 /* Class = "UITabBarItem"; title = "Series"; ObjectID = "yM4-1G-GoG"; */
 "yM4-1G-GoG.title" = "Series";
+
+/* Class = "UILabel"; text = "Seasons:"; ObjectID = "fBU-ZF-S7F"; */
+"fBU-ZF-S7F.text" = "Seasons:";

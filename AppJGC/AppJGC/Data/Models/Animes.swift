@@ -19,8 +19,6 @@ class Animes: CustomStringConvertible {
     var genres: String?
     var date: Date?
     var photodetail: String?
-    
-    
     var description: String {
         
         return """
@@ -37,10 +35,10 @@ class Animes: CustomStringConvertible {
         """
     }
     
-    // Custom init (Constructor) class with default values
+     //Constructor with default values
     convenience init(photo: String? = nil, name: String? = nil, review: String? = nil , runtime: String? = nil, seasons: String? = nil, episodes: String? = nil, genres: String? = nil, date: Date? = nil, photodetail: String? = nil) {
-        self.init()
         
+        self.init()
         self.photo = photo
         self.name = name
         self.review = review

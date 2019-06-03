@@ -9,28 +9,50 @@
 import UIKit
 
 class MoviesDetailViewController: UIViewController {
-    @IBOutlet weak var mView: UIView!
-    @IBOutlet weak var mImageView: UIImageView!
-    @IBOutlet weak var mNameLabel: UILabel!
-    @IBOutlet weak var mReviewLabel: UILabel!
-    @IBOutlet weak var mDirectorLabel: UILabel!
-    @IBOutlet weak var mRuntimeLabel: UILabel!
+
+    @IBOutlet weak var mdetailImage: UIImageView!
+    @IBOutlet weak var mdetailName: UILabel!
+    @IBOutlet weak var mdetailReview: UILabel!
+    @IBOutlet weak var mdetailDirector: UILabel!
+    @IBOutlet weak var mdetailRuntime: UILabel!
+    @IBOutlet weak var mdetailGenres: UILabel!
     var mdata: Movies?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        update(image: mdata?.photo)
+        update(name: mdata?.name)
+        update(review: mdata?.review)
+        update(director: mdata?.director)
+        update(runtime: mdata?.runtime)
+        update(genres: mdata?.genres)
+    }
     
     func set(data movies: Movies) {
         mdata = movies
     }
+    
+    private func update(image: String?){
+        guard let imageData = image else{
+            return
+        }
+        
+        mdetailImage.image = UIImage(named: imageData)
+    }
     private func update(name: String?){
-        mNameLabel.text = name
+        mdetailName.text = name
     }
     private func update(review: String?){
-        mReviewLabel.text = review
+        mdetailReview.text = review
     }
     private func update(director: String?){
-        mDirectorLabel.text = director
+        mdetailDirector.text = director
     }
     private func update(runtime: String?){
-        mRuntimeLabel.text = runtime
+        mdetailRuntime.text = runtime
+    }
+    private func update(genres: String?){
+        mdetailGenres.text = genres
     }
 }
 

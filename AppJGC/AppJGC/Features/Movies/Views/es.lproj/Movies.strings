@@ -3,28 +3,28 @@
 "9LF-x1-1qY.text" = "mdetailReview";
 
 /* Class = "UITabBarItem"; title = "Movies"; ObjectID = "FmG-de-djG"; */
-"FmG-de-djG.title" = "Movies";
+"FmG-de-djG.title" = "Peliculas";
 
 /* Class = "UILabel"; text = "mdetailDirector"; ObjectID = "MY8-We-gOV"; */
 "MY8-We-gOV.text" = "mdetailDirector";
 
 /* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "Ndh-Qd-atJ"; */
-"Ndh-Qd-atJ.normalTitle" = "Delete";
+"Ndh-Qd-atJ.normalTitle" = "Borrar";
 
 /* Class = "UILabel"; text = "mdetailRuntime"; ObjectID = "RUt-Z9-9Zp"; */
 "RUt-Z9-9Zp.text" = "mdetailRuntime";
 
 /* Class = "UINavigationItem"; title = "Top Movies"; ObjectID = "T5o-54-6d0"; */
-"T5o-54-6d0.title" = "Top Movies";
+"T5o-54-6d0.title" = "Mejores Peliculas";
 
 /* Class = "UITabBarItem"; title = "Movies"; ObjectID = "apq-L4-hcG"; */
-"apq-L4-hcG.title" = "Movies";
+"apq-L4-hcG.title" = "Peliculas";
 
 /* Class = "UILabel"; text = "Creator:"; ObjectID = "j9O-Co-Efg"; */
-"j9O-Co-Efg.text" = "Creator:";
+"j9O-Co-Efg.text" = "Director:";
 
 /* Class = "UILabel"; text = "Review:"; ObjectID = "jDg-IN-VNg"; */
-"jDg-IN-VNg.text" = "Review:";
+"jDg-IN-VNg.text" = "Descripción:";
 
 /* Class = "UILabel"; text = "Runtime:"; ObjectID = "lY1-Cs-4gp"; */
 "lY1-Cs-4gp.text" = "Runtime:";

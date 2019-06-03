@@ -55,4 +55,3 @@ class MoviesDetailViewController: UIViewController {
         mdetailGenres.text = genres
     }
 }
-

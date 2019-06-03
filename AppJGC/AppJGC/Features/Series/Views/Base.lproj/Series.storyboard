@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="4tA-2F-2lf">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="605"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mdetailName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRU-kL-ShZ">
                                         <rect key="frame" x="216" y="8" width="123" height="25"/>
@@ -262,13 +262,22 @@
                                     <constraint firstItem="Ap7-3s-jT5" firstAttribute="top" secondItem="vQJ-XQ-wrg" secondAttribute="bottom" constant="8" id="zS9-JN-7AL"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIZ-9G-KgE">
+                                <rect key="frame" x="165" y="699" width="45" height="30"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.99118012189865112" green="0.14612841606140137" blue="0.047593645751476288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dzn-ZC-72e" firstAttribute="bottom" secondItem="4tA-2F-2lf" secondAttribute="bottom" id="6VY-UE-1ho"/>
                             <constraint firstItem="dzn-ZC-72e" firstAttribute="trailing" secondItem="4tA-2F-2lf" secondAttribute="trailing" id="7Hd-N2-jS9"/>
                             <constraint firstItem="4tA-2F-2lf" firstAttribute="leading" secondItem="dzn-ZC-72e" secondAttribute="leading" id="Tx9-eU-T8b"/>
+                            <constraint firstItem="VIZ-9G-KgE" firstAttribute="top" secondItem="4tA-2F-2lf" secondAttribute="bottom" constant="6" id="c6Y-d9-eCW"/>
                             <constraint firstItem="4tA-2F-2lf" firstAttribute="top" secondItem="dzn-ZC-72e" secondAttribute="top" id="gdd-aY-1Jd"/>
+                            <constraint firstItem="VIZ-9G-KgE" firstAttribute="centerX" secondItem="4tA-2F-2lf" secondAttribute="centerX" id="h31-kn-jcH"/>
+                            <constraint firstItem="VIZ-9G-KgE" firstAttribute="bottom" secondItem="dzn-ZC-72e" secondAttribute="bottom" id="tWy-LA-jnu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dzn-ZC-72e"/>
                     </view>

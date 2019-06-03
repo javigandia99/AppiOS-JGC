@@ -11,7 +11,7 @@ import UIKit
 class MoviesViewController: UIViewController{
     
     @IBOutlet weak var mCollectionView: UICollectionView!
-    var itemSpacing: CGFloat = 20
+    var itemSpacing: CGFloat = 100
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -72,7 +72,7 @@ extension AnimesViewController: UITableViewDataSource, UITableViewDelegate {
             let delete = UIContextualAction(style: .destructive, title: "Delete") {
                 (UIContextualAction, view, actionPerformed: @escaping (Bool) -> ()) in
                 
-                let alert = UIAlertController(title: "Delete Anime", message: "Are you sure you want to delete this anime: \(String(data: name))", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Delete Anime", message: "Are you sure you want to delete this anime?", preferredStyle: .alert)
                 
                 alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (alertAction) in
                     actionPerformed(false)

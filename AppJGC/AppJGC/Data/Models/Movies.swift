@@ -15,7 +15,6 @@ class Movies: CustomStringConvertible {
     var director: String?
     var runtime: String?
     var genres: String?
-    var  date: Date?
     var description: String {
         
         return """
@@ -28,7 +27,7 @@ class Movies: CustomStringConvertible {
     }
     
      //Constructor with default values
-    convenience init(photo: String? = nil, name: String? = nil, review: String? = nil, director: String? = nil , runtime: String? = nil, genres: String? = nil, date: Date? = nil) {
+    convenience init(photo: String? = nil, name: String? = nil, review: String? = nil, director: String? = nil , runtime: String? = nil, genres: String? = nil) {
         
         self.init()
         self.photo = photo
@@ -37,7 +36,6 @@ class Movies: CustomStringConvertible {
         self.runtime = runtime
         self.director = director
         self.genres = genres
-        self.date = date
         
     }
 }

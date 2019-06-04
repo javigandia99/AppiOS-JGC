@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "mdetailGenres"; ObjectID = "2DZ-gR-yp9"; */
+"2DZ-gR-yp9.text" = "mdetailGenres";
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "53W-1O-ui4"; */
+"53W-1O-ui4.normalTitle" = "Borrar";
+
+/* Class = "UILabel"; text = "mdetailDate"; ObjectID = "68q-l8-QCF"; */
+"68q-l8-QCF.text" = "mdetailDate";
+
+/* Class = "UILabel"; text = "mdetailRuntime"; ObjectID = "6rU-uh-IDK"; */
+"6rU-uh-IDK.text" = "mdetailRuntime";
+
+/* Class = "UILabel"; text = "mDetailName"; ObjectID = "8kU-xh-5DE"; */
+"8kU-xh-5DE.text" = "mDetailName";
+
+/* Class = "UITabBarItem"; title = "Animes"; ObjectID = "ESq-kg-Nzu"; */
+"ESq-kg-Nzu.title" = "Animes";
+
+/* Class = "UINavigationItem"; title = "Top Animes"; ObjectID = "FXO-tg-HmJ"; */
+"FXO-tg-HmJ.title" = "Top Animes";
+
+/* Class = "UILabel"; text = "Genres:"; ObjectID = "Jde-Uq-Z3q"; */
+"Jde-Uq-Z3q.text" = "Generos:";
+
+/* Class = "UITabBarItem"; title = "Animes"; ObjectID = "MYo-JU-6Xf"; */
+"MYo-JU-6Xf.title" = "Animes";
+
+/* Class = "UILabel"; text = "mdetailEpisodes"; ObjectID = "NDE-my-XhD"; */
+"NDE-my-XhD.text" = "mdetailEpisodes";
+
+/* Class = "UILabel"; text = "mDetailReview"; ObjectID = "RNq-Gb-snG"; */
+"RNq-Gb-snG.text" = "mDetailReview";
+
+/* Class = "UILabel"; text = "mdetailSeasons"; ObjectID = "WCh-Ss-bxY"; */
+"WCh-Ss-bxY.text" = "mdetailSeasons";
+
+/* Class = "UILabel"; text = "mName"; ObjectID = "Xtl-dR-XGR"; */
+"Xtl-dR-XGR.text" = "mName";
+
+/* Class = "UILabel"; text = "Review:"; ObjectID = "wfh-6K-b2p"; */
+"wfh-6K-b2p.text" = "Descripción:";

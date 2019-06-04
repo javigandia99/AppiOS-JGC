@@ -67,15 +67,31 @@ extension UsersViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     //Desliza en la tableview para borrar la cell, no tiene persistencia de datos
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexpath: IndexPath) {
-        if editingStyle == .delete{
-            defaultUsers.remove(at: indexpath.row)
-            mTableView.beginUpdates()
-            mTableView.deleteRows(at: [indexpath], with: .automatic)
-            mTableView.endUpdates()
-        } else if editingStyle == .insert{
-            print("add")
-        }
-        
-    }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) ->
+     UISwipeActionsConfiguration? {
+     
+     let delete = UIContextualAction(style: .destructive, title: "Delete") {
+     (UIContextualAction, view, actionPerformed: @escaping (Bool) -> ()) in
+     
+     let alert = UIAlertController(title: "Delete User", message: "Are you sure you want to delete this user:", preferredStyle: .alert)
+     
+     alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (alertAction) in
+     actionPerformed(false)
+     }))
+     
+     alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (alertAction) in
+     
+    defaultUsers.remove(at: indexPath.row)
+     tableView.deleteRows(at: [indexPath], with: .automatic)
+     tableView.reloadData()
+     }))
+     
+     self.present(alert, animated: true)
+     
+     }
+     return UISwipeActionsConfiguration(actions: [delete])
+     }
+    
+    
+    
 }

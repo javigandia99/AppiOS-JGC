@@ -18,10 +18,10 @@
 "ESq-kg-Nzu.title" = "Animes";
 
 /* Class = "UINavigationItem"; title = "Top Animes"; ObjectID = "FXO-tg-HmJ"; */
-"FXO-tg-HmJ.title" = "Top Animes";
+"FXO-tg-HmJ.title" = "Mejores Animes";
 
 /* Class = "UILabel"; text = "Genres:"; ObjectID = "Jde-Uq-Z3q"; */
-"Jde-Uq-Z3q.text" = "Generos:";
+"Jde-Uq-Z3q.text" = "Géneros:";
 
 /* Class = "UITabBarItem"; title = "Animes"; ObjectID = "MYo-JU-6Xf"; */
 "MYo-JU-6Xf.title" = "Animes";

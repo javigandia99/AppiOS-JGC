@@ -58,5 +58,4 @@ class UsersViewCell: UITableViewCell {
     private func update(userid: String?){
         mUseridLabel.text = userid
     }
-    
 }

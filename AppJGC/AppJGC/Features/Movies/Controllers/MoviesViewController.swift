@@ -11,7 +11,6 @@ import UIKit
 class MoviesViewController: UIViewController{
     
     @IBOutlet weak var mCollectionView: UICollectionView!
-    var itemSpacing: CGFloat = 100
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,18 +55,26 @@ extension MoviesViewController:  UICollectionViewDelegate, UICollectionViewDataS
         mCollectionView.delegate = self
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = (collectionView.frame.width / 3 ) - (itemSpacing / 3)
-        return CGSize(width: size,
-                      height: size)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return itemSpacing
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return itemSpacing
+    /*func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+     let size = (collectionView.frame.width / 3 ) - (itemSpacing / 3)
+     return CGSize(width: size,
+     height: size)
+     }
+     
+     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+     return itemSpacing
+     }
+     
+     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+     return itemSpacing
+     }*/
+    func collectionView ( collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+        let totalSpace = flowLayout.sectionInset.left + flowLayout.sectionInset.right + (flowLayout.minimumInteritemSpacing * CGFloat(3 - 1))
+        let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(3))
+       
+        return CGSize(width: size, height: size)
     }
 }
 

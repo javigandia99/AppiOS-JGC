@@ -11,7 +11,7 @@
 		1D06061C2297EFDD0095E21B /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06061B2297EFDD0095E21B /* MoviesViewController.swift */; };
 		1D060CD522A06DBC00CBFE22 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D060CD422A06DBC00CBFE22 /* DateExtension.swift */; };
 		1D08FEBE22A3EEE300EC30EB /* Movies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D08FEC022A3EEE300EC30EB /* Movies.storyboard */; };
-		1D233A742299709F00A87B96 /* Animes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D233A732299709F00A87B96 /* Animes.storyboard */; };
+		1D0912CA22A6C75000F97209 /* Animes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0912CC22A6C75000F97209 /* Animes.storyboard */; };
 		1D233A7822999D0200A87B96 /* Animes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D233A7722999D0200A87B96 /* Animes.swift */; };
 		1D5FDBE222A0078E002AB70F /* AnimesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5FDBE122A0078E002AB70F /* AnimesViewCell.swift */; };
 		1D5FDBE422A00856002AB70F /* MoviesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5FDBE322A00856002AB70F /* MoviesViewCell.swift */; };
@@ -45,7 +45,9 @@
 		1D08FEBF22A3EEE300EC30EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Movies.storyboard; sourceTree = "<group>"; };
 		1D08FEC222A3EEED00EC30EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Movies.strings; sourceTree = "<group>"; };
 		1D08FEC422A3EEF100EC30EB /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Movies.strings; sourceTree = "<group>"; };
-		1D233A732299709F00A87B96 /* Animes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animes.storyboard; sourceTree = "<group>"; };
+		1D0912CB22A6C75000F97209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Animes.storyboard; sourceTree = "<group>"; };
+		1D0912CE22A6C75800F97209 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Animes.strings; sourceTree = "<group>"; };
+		1D0912D022A6C75B00F97209 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = es; path = es.lproj/Animes.strings; sourceTree = "<group>"; };
 		1D233A7722999D0200A87B96 /* Animes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animes.swift; sourceTree = "<group>"; };
 		1D5FDBE122A0078E002AB70F /* AnimesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimesViewCell.swift; sourceTree = "<group>"; };
 		1D5FDBE322A00856002AB70F /* MoviesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewCell.swift; sourceTree = "<group>"; };
@@ -139,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				1D233A7222996F0E00A87B96 /* Cell */,
-				1D233A732299709F00A87B96 /* Animes.storyboard */,
+				1D0912CC22A6C75000F97209 /* Animes.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -424,7 +426,7 @@
 				1D6AE98C22A294C500E52A85 /* Users.storyboard in Resources */,
 				6575AECA229683620054C8BE /* Assets.xcassets in Resources */,
 				6575AEC8229683600054C8BE /* Main.storyboard in Resources */,
-				1D233A742299709F00A87B96 /* Animes.storyboard in Resources */,
+				1D0912CA22A6C75000F97209 /* Animes.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +472,16 @@
 				1D08FEC422A3EEF100EC30EB /* es */,
 			);
 			name = Movies.storyboard;
+			sourceTree = "<group>";
+		};
+		1D0912CC22A6C75000F97209 /* Animes.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D0912CB22A6C75000F97209 /* Base */,
+				1D0912CE22A6C75800F97209 /* en */,
+				1D0912D022A6C75B00F97209 /* es */,
+			);
+			name = Animes.storyboard;
 			sourceTree = "<group>";
 		};
 		1D6AE98722A2831500E52A85 /* Series.storyboard */ = {

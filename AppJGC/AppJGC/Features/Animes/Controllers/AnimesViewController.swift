@@ -10,7 +10,7 @@ import UIKit
 
 class AnimesViewController: UIViewController {
     @IBOutlet weak var mTableView: UITableView!
-   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,14 +66,28 @@ extension AnimesViewController: UITableViewDataSource, UITableViewDelegate {
         
     }
     
-    //Desliza en la tableview para borrar la cell, no tiene persistencia de datos, por lo que no se borrara del defaultdata
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexpath: IndexPath) {
-        if editingStyle == .delete{
-            defaultAnimes.remove(at: indexpath.row)
-            mTableView.beginUpdates()
-            mTableView.deleteRows(at: [indexpath], with: .automatic)
-            mTableView.endUpdates()
-        }
-        
-}
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) ->
+        UISwipeActionsConfiguration? {
+            
+            let delete = UIContextualAction(style: .destructive, title: "Delete") {
+                (UIContextualAction, view, actionPerformed: @escaping (Bool) -> ()) in
+                
+                let alert = UIAlertController(title: "Delete Anime", message: "Are you sure you want to delete this anime: \(String(data: name))", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (alertAction) in
+                    actionPerformed(false)
+                }))
+                
+                alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (alertAction) in
+                    
+                    defaultAnimes.remove(at: indexPath.row)
+                    tableView.deleteRows(at: [indexPath], with: .automatic)
+                    tableView.reloadData()
+                }))
+                
+                self.present(alert, animated: true)
+                
+            }
+            return UISwipeActionsConfiguration(actions: [delete])
+    }
 }

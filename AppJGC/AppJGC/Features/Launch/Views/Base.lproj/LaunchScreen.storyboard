@@ -19,27 +19,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondolaunch" translatesAutoresizingMaskIntoConstraints="NO" id="QE4-Ys-Jb0">
-                                <rect key="frame" x="-198.5" y="0.0" width="811" height="902"/>
+                                <rect key="frame" x="-170" y="-2330" width="754" height="5556"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="811" id="eOb-6l-C9Q"/>
+                                    <constraint firstAttribute="width" constant="754" id="OBq-nq-Yww"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconoapp" translatesAutoresizingMaskIntoConstraints="NO" id="IGU-XY-BLN">
-                                <rect key="frame" x="155" y="497" width="107" height="120"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJc-Wk-ynT">
-                                <rect key="frame" x="20" y="370" width="374" height="50"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="31"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyAppList" textAlignment="center" lineBreakMode="clip" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqu-Ce-DbF">
-                                <rect key="frame" x="88.5" y="428" width="239" height="50"/>
+                                <rect key="frame" x="44" y="424" width="324" height="49"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="S23-yJ-mKA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.017050979658961296" green="0.55960297584533691" blue="0.97118407487869263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -48,20 +36,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="IGU-XY-BLN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="1Tq-ae-gnV"/>
-                            <constraint firstItem="Xqu-Ce-DbF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="9Nv-mm-LqJ"/>
-                            <constraint firstItem="Xqu-Ce-DbF" firstAttribute="top" secondItem="xJc-Wk-ynT" secondAttribute="bottom" constant="8" symbolic="YES" id="Bw4-ae-Ddd"/>
-                            <constraint firstItem="IGU-XY-BLN" firstAttribute="top" secondItem="Xqu-Ce-DbF" secondAttribute="bottom" constant="19" id="IL6-b0-Pgu"/>
-                            <constraint firstItem="xJc-Wk-ynT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="JwU-HW-37d"/>
-                            <constraint firstItem="Xqu-Ce-DbF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="428" id="KZY-0l-4Zu"/>
-                            <constraint firstItem="QE4-Ys-Jb0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dec-W9-28Y"/>
-                            <constraint firstItem="xJc-Wk-ynT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="326" id="jw1-hL-efW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IGU-XY-BLN" secondAttribute="trailing" constant="152" id="mcI-Fg-014"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IGU-XY-BLN" secondAttribute="bottom" constant="245" id="nBj-tJ-qQO"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="QE4-Ys-Jb0" secondAttribute="bottom" constant="-40" id="o8N-tB-m1w"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xqu-Ce-DbF" secondAttribute="trailing" constant="86.5" id="vhv-4M-E94"/>
-                            <constraint firstItem="QE4-Ys-Jb0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="wmu-Jb-oNk"/>
-                            <constraint firstItem="xJc-Wk-ynT" firstAttribute="centerX" secondItem="QE4-Ys-Jb0" secondAttribute="centerX" id="zmo-e2-GY4"/>
+                            <constraint firstItem="Xqu-Ce-DbF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-1" id="0ml-hr-Oqy"/>
+                            <constraint firstItem="QE4-Ys-Jb0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1Ru-Vm-4HN"/>
+                            <constraint firstItem="Xqu-Ce-DbF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="GyM-5x-rgL"/>
+                            <constraint firstItem="QE4-Ys-Jb0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aTB-Zd-cr8"/>
+                            <constraint firstItem="Xqu-Ce-DbF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="deV-ow-e3W"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -73,6 +52,5 @@
     </scenes>
     <resources>
         <image name="fondolaunch" width="5556" height="5556"/>
-        <image name="iconoapp" width="50" height="50"/>
     </resources>
 </document>

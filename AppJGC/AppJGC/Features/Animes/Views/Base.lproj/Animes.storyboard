@@ -33,31 +33,30 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a1k-qs-c4o">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
                                                 </imageView>
+                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fc7-r7-MMC">
+                                                    <rect key="frame" x="20" y="149" width="374" height="41"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                </view>
                                                 <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mName" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtl-dR-XGR">
-                                                    <rect key="frame" x="0.0" y="148.5" width="414" height="41.5"/>
+                                                    <rect key="frame" x="153.5" y="149" width="107" height="42"/>
                                                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="highlightedColor" red="0.00052852829685434699" green="0.65451014041900635" blue="0.99712592363357544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="shadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                     <size key="shadowOffset" width="4" height="3"/>
                                                 </label>
-                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fc7-r7-MMC">
-                                                    <rect key="frame" x="0.0" y="148.5" width="414" height="41.5"/>
-                                                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="a1k-qs-c4o" firstAttribute="leading" secondItem="o3a-D3-tpM" secondAttribute="leading" id="5eB-lH-QL7"/>
-                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="trailing" secondItem="a1k-qs-c4o" secondAttribute="trailing" id="Ddw-ms-IaH"/>
-                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="leading" secondItem="Xtl-dR-XGR" secondAttribute="leading" id="EpN-xJ-EyU"/>
-                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="bottom" secondItem="Xtl-dR-XGR" secondAttribute="bottom" id="IVA-wD-Oe6"/>
+                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="centerX" secondItem="a1k-qs-c4o" secondAttribute="centerX" id="AFp-to-liQ"/>
                                                 <constraint firstAttribute="trailing" secondItem="a1k-qs-c4o" secondAttribute="trailing" id="Ldn-oC-TBW"/>
-                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="leading" secondItem="a1k-qs-c4o" secondAttribute="leading" id="Q0R-Fk-g4V"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xtl-dR-XGR" secondAttribute="bottom" constant="-1" id="NnR-dd-47F"/>
+                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="bottom" secondItem="Xtl-dR-XGR" secondAttribute="bottom" constant="-1" id="Ojg-ok-7nd"/>
                                                 <constraint firstItem="a1k-qs-c4o" firstAttribute="centerY" secondItem="o3a-D3-tpM" secondAttribute="centerY" id="X9y-Jx-nE9"/>
-                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="top" secondItem="Xtl-dR-XGR" secondAttribute="top" id="ZJD-ZL-QFG"/>
-                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="bottom" secondItem="a1k-qs-c4o" secondAttribute="bottom" id="fGe-9L-k6d"/>
-                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="trailing" secondItem="Xtl-dR-XGR" secondAttribute="trailing" id="hXh-2d-sJQ"/>
+                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="centerX" secondItem="Xtl-dR-XGR" secondAttribute="centerX" id="cJU-ER-gw6"/>
+                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="leading" secondItem="o3a-D3-tpM" secondAttribute="leadingMargin" id="dvj-Oa-Uty"/>
                                                 <constraint firstItem="a1k-qs-c4o" firstAttribute="top" secondItem="o3a-D3-tpM" secondAttribute="top" id="mYK-ha-7dm"/>
+                                                <constraint firstItem="Fc7-r7-MMC" firstAttribute="top" secondItem="Xtl-dR-XGR" secondAttribute="top" id="uf4-km-nVA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

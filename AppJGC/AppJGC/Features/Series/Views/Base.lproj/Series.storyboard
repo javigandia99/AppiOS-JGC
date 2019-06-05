@@ -99,7 +99,7 @@
                         <viewLayoutGuide key="safeArea" id="iEf-T5-Woc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Top Series" id="anG-hY-P9S">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Pbv-Q2-Syk"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="add" id="Pbv-Q2-Syk"/>
                     </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -280,7 +280,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dzn-ZC-72e"/>
                     </view>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mdetailDate" destination="FwZ-C2-4L8" id="d77-Ib-4TI"/>
                         <outlet property="mdetailDirector" destination="Wtg-NP-5ZY" id="iRv-Po-nxI"/>

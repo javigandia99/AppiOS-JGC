@@ -41,9 +41,11 @@
 		1D0606152297EE100095E21B /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		1D06061B2297EFDD0095E21B /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		1D060CD422A06DBC00CBFE22 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		1D0768AF22A8261900591791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Movies.strings; sourceTree = "<group>"; };
+		1D0768B122A8261D00591791 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Movies.strings; sourceTree = "<group>"; };
+		1D0768B322A8283700591791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Series.strings; sourceTree = "<group>"; };
+		1D0768B522A8283A00591791 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Series.strings; sourceTree = "<group>"; };
 		1D08FEBF22A3EEE300EC30EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Movies.storyboard; sourceTree = "<group>"; };
-		1D08FEC222A3EEED00EC30EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Movies.strings; sourceTree = "<group>"; };
-		1D08FEC422A3EEF100EC30EB /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Movies.strings; sourceTree = "<group>"; };
 		1D0912CB22A6C75000F97209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Animes.storyboard; sourceTree = "<group>"; };
 		1D0912CE22A6C75800F97209 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Animes.strings; sourceTree = "<group>"; };
 		1D0912D022A6C75B00F97209 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = es; path = es.lproj/Animes.strings; sourceTree = "<group>"; };
@@ -54,8 +56,6 @@
 		1D5FDBE322A00856002AB70F /* MoviesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewCell.swift; sourceTree = "<group>"; };
 		1D67AFE9229F3E7900771FB9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		1D6AE98622A2831500E52A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Series.storyboard; sourceTree = "<group>"; };
-		1D6AE98922A2831D00E52A85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Series.strings; sourceTree = "<group>"; };
-		1D6AE98B22A2832300E52A85 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Series.strings; sourceTree = "<group>"; };
 		1D6AE98D22A294C500E52A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Users.storyboard; sourceTree = "<group>"; };
 		1D6AE99022A294D200E52A85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Users.strings; sourceTree = "<group>"; };
 		1D6AE99222A294D400E52A85 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Users.strings; sourceTree = "<group>"; };
@@ -468,8 +468,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				1D08FEBF22A3EEE300EC30EB /* Base */,
-				1D08FEC222A3EEED00EC30EB /* en */,
-				1D08FEC422A3EEF100EC30EB /* es */,
+				1D0768AF22A8261900591791 /* en */,
+				1D0768B122A8261D00591791 /* es */,
 			);
 			name = Movies.storyboard;
 			sourceTree = "<group>";
@@ -488,8 +488,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				1D6AE98622A2831500E52A85 /* Base */,
-				1D6AE98922A2831D00E52A85 /* en */,
-				1D6AE98B22A2832300E52A85 /* es */,
+				1D0768B322A8283700591791 /* en */,
+				1D0768B522A8283A00591791 /* es */,
 			);
 			name = Series.storyboard;
 			sourceTree = "<group>";

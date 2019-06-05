@@ -5,11 +5,14 @@
 /* Class = "UILabel"; text = "Creator:"; ObjectID = "2oc-NB-jfh"; */
 "2oc-NB-jfh.text" = "Director:";
 
+/* Class = "UILabel"; text = "mdetailSeasons"; ObjectID = "7qp-tH-iKd"; */
+"7qp-tH-iKd.text" = "mdetailSeasons";
+
 /* Class = "UILabel"; text = "mdetailReview"; ObjectID = "Ap7-3s-jT5"; */
 "Ap7-3s-jT5.text" = "mdetailReview";
 
 /* Class = "UILabel"; text = "Realease date:"; ObjectID = "CaE-4A-BdR"; */
-"CaE-4A-BdR.text" = "Fecha de Estreno:";
+"CaE-4A-BdR.text" = "Fecha de estreno:";
 
 /* Class = "UILabel"; text = "mdetailName"; ObjectID = "FRU-kL-ShZ"; */
 "FRU-kL-ShZ.text" = "mdetailName";
@@ -20,6 +23,9 @@
 /* Class = "UILabel"; text = "Genres:"; ObjectID = "LLV-67-hTM"; */
 "LLV-67-hTM.text" = "Géneros:";
 
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "RZr-Tz-99H"; */
+"RZr-Tz-99H.normalTitle" = "Borrar";
+
 /* Class = "UILabel"; text = "mdetailDirector"; ObjectID = "Wtg-NP-5ZY"; */
 "Wtg-NP-5ZY.text" = "mdetailDirector";
 
@@ -28,6 +34,9 @@
 
 /* Class = "UILabel"; text = "mdetailRuntime"; ObjectID = "cfB-4U-ZcF"; */
 "cfB-4U-ZcF.text" = "mdetailRuntime";
+
+/* Class = "UILabel"; text = "Seasons:"; ObjectID = "fBU-ZF-S7F"; */
+"fBU-ZF-S7F.text" = "Temporadas:";
 
 /* Class = "UILabel"; text = "Runtime:"; ObjectID = "u2U-pk-LYo"; */
 "u2U-pk-LYo.text" = "Duración:";
@@ -40,6 +49,3 @@
 
 /* Class = "UITabBarItem"; title = "Series"; ObjectID = "yM4-1G-GoG"; */
 "yM4-1G-GoG.title" = "Series";
-
-/* Class = "UILabel"; text = "Seasons:"; ObjectID = "fBU-ZF-S7F"; */
-"fBU-ZF-S7F.text" = "Temporadas:";

@@ -5,6 +5,9 @@
 /* Class = "UITabBarItem"; title = "Movies"; ObjectID = "FmG-de-djG"; */
 "FmG-de-djG.title" = "Movies";
 
+/* Class = "UILabel"; text = "mdetailGenres"; ObjectID = "MFv-c1-5h7"; */
+"MFv-c1-5h7.text" = "mdetailGenres";
+
 /* Class = "UILabel"; text = "mdetailDirector"; ObjectID = "MY8-We-gOV"; */
 "MY8-We-gOV.text" = "mdetailDirector";
 
@@ -13,6 +16,9 @@
 
 /* Class = "UILabel"; text = "mdetailRuntime"; ObjectID = "RUt-Z9-9Zp"; */
 "RUt-Z9-9Zp.text" = "mdetailRuntime";
+
+/* Class = "UILabel"; text = "Genres:"; ObjectID = "RyA-Ec-oOx"; */
+"RyA-Ec-oOx.text" = "Genres:";
 
 /* Class = "UINavigationItem"; title = "Top Movies"; ObjectID = "T5o-54-6d0"; */
 "T5o-54-6d0.title" = "Top Movies";

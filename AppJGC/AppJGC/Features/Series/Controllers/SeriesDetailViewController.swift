@@ -19,7 +19,6 @@ class SeriesDetailViewController: UIViewController {
     @IBOutlet weak var mdetailGenres: UILabel!
     @IBOutlet weak var mdetailDate: UILabel!
     
-    
     var mdata: Series? = nil
     
     override func viewDidLoad() {
@@ -49,25 +48,34 @@ class SeriesDetailViewController: UIViewController {
         }
         
         mdetailImage.image = UIImage(named: imageData)
+        mdetailImage.layer.borderWidth = 1
+        mdetailImage.layer.borderColor = UIColor.blue.cgColor
     }
+    
     private func update(name: String?){
         mdetailName.text = name
     }
+    
     private func update(review: String?){
         mdetailReview.text = review
     }
+    
     private func update(director: String?){
         mdetailDirector.text = director
     }
+    
     private func update(runtime: String?){
         mdetailRuntime.text = runtime
     }
+    
     private func update(seasons: String?){
         mdetailSeasons.text = seasons
     }
+    
     private func update(genres: String?){
         mdetailGenres.text = genres
     }
+    
     private func update(date: Date?) {
         mdetailDate?.text = date?.toFormattedString(with: defaultDateFormatYear)
     }
@@ -76,5 +84,4 @@ class SeriesDetailViewController: UIViewController {
         super.viewDidAppear(animated)
         
     }
-    
 }

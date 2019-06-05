@@ -22,6 +22,7 @@ class AnimesViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    //This function is used to move the data from the designated cell to the details view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let selectedCell = sender  as? UITableViewCell,
             let cellPosition = mTableView.indexPath(for: selectedCell),
@@ -60,12 +61,14 @@ extension AnimesViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
     }
     
-    //si puede editarse o no, si return true,editable, si return false, no editable
+    //It allows you to edit the rows of the tableview
     func tableView(_ tableView: UITableView, canEditRowAt  indexpath: IndexPath) -> Bool {
         return true
         
     }
     
+    //When you slide in the cell of the table view, you can delete the cell and the data that contains
+    //It creates an alert to confirm if you really mean to delete the cell or not
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) ->
         UISwipeActionsConfiguration? {
             

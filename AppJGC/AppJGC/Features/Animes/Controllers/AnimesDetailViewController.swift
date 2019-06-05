@@ -49,6 +49,8 @@ class AnimesDetailViewController: UIViewController {
         }
         
         mdetailImage.image = UIImage(named: imageData)
+        mdetailImage.layer.borderWidth = 1
+        mdetailImage.layer.borderColor = UIColor.blue.cgColor
     }
     private func update(name: String?){
         mdetailName.text = name
@@ -62,6 +64,7 @@ class AnimesDetailViewController: UIViewController {
         }
         
         mImage.image = UIImage(named: imageData)
+        
     }
     private func update(episodes: String?){
         mdetailEpisodes.text = episodes

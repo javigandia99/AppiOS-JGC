@@ -36,9 +36,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="124" height="168"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJa-DG-Gy6">
+                                            <rect key="frame" x="117" y="148" width="0.0" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.15344467759132385" green="0.97726541757583618" blue="0.0065941112115979195" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="qJa-DG-Gy6" firstAttribute="top" secondItem="Nbr-wx-tXe" secondAttribute="topMargin" constant="96" id="1jA-2k-vME"/>
+                                    <constraint firstAttribute="trailing" secondItem="qJa-DG-Gy6" secondAttribute="trailing" id="kOe-WT-BnW"/>
+                                </constraints>
                                 <connections>
+                                    <outlet property="checkmarkLabel" destination="qJa-DG-Gy6" id="W6q-n0-Diq"/>
                                     <outlet property="mImageView" destination="qhR-w1-cuT" id="2jq-Sn-S4D"/>
                                     <segue destination="zhp-CL-q28" kind="show" id="f1b-lm-7T0"/>
                                 </connections>
@@ -48,10 +59,15 @@
                     <tabBarItem key="tabBarItem" title="Movies" image="iconMovies" id="apq-L4-hcG"/>
                     <navigationItem key="navigationItem" title="Top Movies" id="T5o-54-6d0">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="zke-dY-gha"/>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="trash" id="rVb-EC-VUs"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="trash" id="rVb-EC-VUs">
+                            <connections>
+                                <action selector="deleteItem:" destination="oEX-Kf-UbR" id="bKN-Sn-tCE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="deleteButton" destination="rVb-EC-VUs" id="L5C-m2-vv7"/>
                         <outlet property="mCollectionView" destination="VUd-OS-U1u" id="EEw-Cd-ToX"/>
                     </connections>
                 </collectionViewController>

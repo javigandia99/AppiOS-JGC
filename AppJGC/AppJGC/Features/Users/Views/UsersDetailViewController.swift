@@ -36,12 +36,13 @@ class UsersDetailViewController: UIViewController {
     func set(data users: Users) {
         mdata = users
     }
+    
     private func update(image: String?){
         guard let imageData = image else{
             return
         }
         
-       mdetailImage.image = UIImage(named: imageData)
+        mdetailImage.image = UIImage(named: imageData)
     }
     private func update(userid: String?){
         mdetailUserid.text = userid
@@ -53,7 +54,6 @@ class UsersDetailViewController: UIViewController {
     private func update(description: String?){
         mdetailName.text = description
     }
-
     
     func viewWillAppear(animated: Bool){
         super.viewDidAppear(animated)
@@ -65,14 +65,7 @@ class UsersDetailViewController: UIViewController {
 extension UsersDetailViewController:  UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        /*var mSerieName =  defaultSeries.filter{ $0.name?.contains( where: { name in
-            guard let mSeries = Series.name else{
-                return false
-            }
-            
-            // Compare actual subject student name with student name
-            // return true if name are same
-            return mSeries.compare(Series) == .orderedSame }) ?? false}*/
+        
         return defaultUsers.count
     }
     
@@ -83,9 +76,9 @@ extension UsersDetailViewController:  UICollectionViewDelegate, UICollectionView
         (cell as? SeriesViewCell)?.update(data: defaultSeries[indexPath.row])
         
         return cell
-}
+    }
     func configure( collectionView: UICollectionView){
         mCollectionView.dataSource = self
         mCollectionView.delegate = self
-}
+    }
 }

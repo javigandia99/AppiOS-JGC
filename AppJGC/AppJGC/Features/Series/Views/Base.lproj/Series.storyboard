@@ -99,7 +99,11 @@
                         <viewLayoutGuide key="safeArea" id="iEf-T5-Woc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Top Series" id="anG-hY-P9S">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="add" id="Pbv-Q2-Syk"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Pbv-Q2-Syk">
+                            <connections>
+                                <action selector="addItem:" destination="1Qw-Ki-HZ4" id="EfS-UI-3r2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

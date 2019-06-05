@@ -11,6 +11,7 @@ class MoviesViewCell: UICollectionViewCell {
     static let mIdentifier = String(describing: MoviesViewCell.self)
     
     @IBOutlet weak var mImageView: UIImageView!
+    @IBOutlet weak var checkmarkLabel : UILabel!
     
     var movies = defaultMovies
     
@@ -34,6 +35,20 @@ class MoviesViewCell: UICollectionViewCell {
         mImageView.image = UIImage(named: imageData)
     }
     
+    var isInEditingMode: Bool = false {
+        didSet {
+            checkmarkLabel.isHidden = !isInEditingMode
+        }
+    }
+    
+    // 2
+    override var isSelected: Bool {
+        didSet {
+            if isInEditingMode {
+                checkmarkLabel.text = isSelected ? "✓" : ""
+            }
+        }
+    }
     
 }
 

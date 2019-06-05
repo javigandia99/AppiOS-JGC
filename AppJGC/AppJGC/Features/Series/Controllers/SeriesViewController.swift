@@ -11,6 +11,7 @@ import UIKit
 class SeriesViewController: UIViewController{
     
     @IBOutlet weak var mCollectionView: UICollectionView!
+    
     var itemSpacing: CGFloat = 200
     
     override func viewDidLoad() {
@@ -23,6 +24,7 @@ class SeriesViewController: UIViewController{
         
     }
     
+    //This function is used to move the data from the designated cell to the details view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let selectedCell = sender  as? UICollectionViewCell,
             let cellPosition = mCollectionView.indexPath(for: selectedCell),
@@ -37,7 +39,7 @@ class SeriesViewController: UIViewController{
 }
 
 extension SeriesViewController:  UICollectionViewDelegate, UICollectionViewDataSource {
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return defaultSeries.count
     }
@@ -55,7 +57,7 @@ extension SeriesViewController:  UICollectionViewDelegate, UICollectionViewDataS
         mCollectionView.dataSource = self
         mCollectionView.delegate = self
     }
-   
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = (collectionView.frame.width / 2.0) - (itemSpacing / 2)
         return CGSize(width: size,

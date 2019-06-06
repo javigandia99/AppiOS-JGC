@@ -16,6 +16,7 @@ class MoviesViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         configure( collectionView: mCollectionView)
+        //Fix the edit button of the navigationBar in the left side
         navigationItem.leftBarButtonItem = editButtonItem
     }
     
@@ -43,7 +44,7 @@ class MoviesViewController: UIViewController{
             deleteButton.isEnabled = true
         }
     }
-    
+    //If there is nothing selected and the count == 0 the delete button is disabled
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         if let selectedItems = mCollectionView.indexPathsForSelectedItems, selectedItems.count == 0 {
             deleteButton.isEnabled = false

@@ -22,7 +22,7 @@ class AnimesViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-         mStyle(view: mView)
+        mStyle(view: mView)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool){

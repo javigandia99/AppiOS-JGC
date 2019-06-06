@@ -30,14 +30,14 @@ class SeriesDetailViewController: UIViewController {
         update(runtime: mdata?.runtime)
         update(seasons: mdata?.seasons)
         update(genres: mdata?.genres)
-         update(date: mdata?.date)
+        update(date: mdata?.date)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
-  
+    
     func set(data series: Series) {
         mdata = series
     }

@@ -8,6 +8,9 @@
 
 import UIKit
 
+protocol SeriesDetailDelegate {
+    func onDelete(series: Series?)
+}
 class SeriesDetailViewController: UIViewController {
     
     @IBOutlet weak var mdetailImage: UIImageView!
@@ -19,7 +22,23 @@ class SeriesDetailViewController: UIViewController {
     @IBOutlet weak var mdetailGenres: UILabel!
     @IBOutlet weak var mdetailDate: UILabel!
     
+    @IBAction func deleteButton(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Delete Serie", message: "Are you sure you want to delete this serie?", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (alertAction) in
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (alertAction) in
+            self.delegate?.onDelete(series: self.mdata)
+            self.navigationController?.popViewController(animated: true)
+        }))
+        
+        self.present(alert, animated: true)
+        
+    }
+    
     var mdata: Series? = nil
+    var delegate: SeriesDetailDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

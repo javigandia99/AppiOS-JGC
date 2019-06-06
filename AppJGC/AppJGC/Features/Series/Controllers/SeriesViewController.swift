@@ -12,11 +12,15 @@ class SeriesViewController: UIViewController{
     
     @IBOutlet weak var mCollectionView: UICollectionView!
     
+    private var mSeries: Array<Series>? = nil
     var itemSpacing: CGFloat = 200
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configure( collectionView: mCollectionView)
+        mSeries = defaultSeries
+        mCollectionView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,7 +37,9 @@ class SeriesViewController: UIViewController{
                 return
         }
         let selected = defaultSeries[cellPosition.row]
+        viewController.delegate = self
         viewController.set(data: selected)
+        
         
     }
 }
@@ -41,14 +47,14 @@ class SeriesViewController: UIViewController{
 extension SeriesViewController:  UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return defaultSeries.count
+        return mSeries?.count ?? 0 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = mCollectionView.dequeueReusableCell(withReuseIdentifier: SeriesViewCell.mIdentifier, for: indexPath)
         
-        (cell as? SeriesViewCell)?.update(data: defaultSeries[indexPath.row])
+        (cell as? SeriesViewCell)?.update(data: mSeries?[indexPath.row])
         
         return cell
     }
@@ -70,5 +76,16 @@ extension SeriesViewController:  UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return itemSpacing
+    }
+}
+//Function to delete serie delegate
+extension SeriesViewController: SeriesDetailDelegate {
+    func onDelete(series: Series?) {
+        guard let serieDel = series else {
+            return
+        }
+        
+        mSeries?.removeAll(where: { $0.name == serieDel.name })
+        mCollectionView.reloadData()
     }
 }

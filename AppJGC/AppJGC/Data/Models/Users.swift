@@ -18,8 +18,14 @@ class Users: CustomStringConvertible {
     var mMovies: [String]?
     var description: String {
         
+        //Concate name + surname
+        guard let nombre = name,
+              let apellido = surname else {
+                return ""
+        }
+        
         return """
-        \(String(describing: name)) \(String(describing: surname))
+        \(String(describing: nombre)) \(String(describing: apellido))
         """
     }
     

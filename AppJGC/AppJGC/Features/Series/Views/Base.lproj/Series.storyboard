@@ -267,14 +267,11 @@
                                     <constraint firstItem="Ap7-3s-jT5" firstAttribute="top" secondItem="vQJ-XQ-wrg" secondAttribute="bottom" constant="8" id="zS9-JN-7AL"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZr-Tz-99H">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZr-Tz-99H">
                                 <rect key="frame" x="165" y="699" width="45" height="30"/>
                                 <state key="normal" title="Delete">
-                                    <color key="titleColor" red="0.99118012189865112" green="0.14612841606140137" blue="0.047593645751476288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="onDeletePressedWithSender:" destination="jrS-D5-vrD" eventType="primaryActionTriggered" id="fbg-Zo-bKK"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>

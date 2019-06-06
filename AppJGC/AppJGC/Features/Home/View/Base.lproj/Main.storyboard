@@ -39,7 +39,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S53-RZ-4b9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="54"/>
+            <point key="canvasLocation" x="-144" y="590"/>
         </scene>
         <!--Series-->
         <scene sceneID="Zht-8O-hwb">
@@ -49,7 +49,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJM-PJ-ctq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="117"/>
+            <point key="canvasLocation" x="8" y="590"/>
         </scene>
         <!--Movies-->
         <scene sceneID="RN9-M3-ano">
@@ -59,20 +59,21 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1c-AZ-Qxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="166"/>
+            <point key="canvasLocation" x="167" y="590"/>
         </scene>
         <!--Animes-->
         <scene sceneID="hDo-uv-rDt">
             <objects>
                 <viewControllerPlaceholder storyboardName="Animes" id="nvG-F5-z6U" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Anime" image="iconUsers" id="vmO-13-SfY"/>
+                    <tabBarItem key="tabBarItem" title="Anime" image="iconAnimes" id="vmO-13-SfY"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zc6-X3-cSX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="229"/>
+            <point key="canvasLocation" x="340" y="590"/>
         </scene>
     </scenes>
     <resources>
+        <image name="iconAnimes" width="32" height="32"/>
         <image name="iconMovies" width="32" height="32"/>
         <image name="iconSeries" width="32" height="32"/>
         <image name="iconUsers" width="32" height="32"/>

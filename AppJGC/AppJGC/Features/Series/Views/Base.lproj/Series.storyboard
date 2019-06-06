@@ -99,7 +99,7 @@
                         <viewLayoutGuide key="safeArea" id="iEf-T5-Woc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Top Series" id="anG-hY-P9S">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Pbv-Q2-Syk">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="add" id="Pbv-Q2-Syk">
                             <connections>
                                 <action selector="addItem:" destination="1Qw-Ki-HZ4" id="EfS-UI-3r2"/>
                             </connections>
@@ -149,9 +149,9 @@
                                         <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Creator:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oc-NB-jfh">
-                                        <rect key="frame" x="30" y="225" width="65.666666666666671" height="20"/>
+                                        <rect key="frame" x="30" y="225" width="320" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="Auk-CC-7KV"/>
+                                            <constraint firstAttribute="height" constant="20" id="CUi-ZV-V2M"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -230,7 +230,6 @@
                                     <constraint firstItem="ViU-P6-7Tf" firstAttribute="top" secondItem="4tA-2F-2lf" secondAttribute="top" constant="8" id="79z-mA-xqp"/>
                                     <constraint firstItem="fBU-ZF-S7F" firstAttribute="trailing" secondItem="Wtg-NP-5ZY" secondAttribute="trailing" id="7a7-Rk-N06"/>
                                     <constraint firstItem="cfB-4U-ZcF" firstAttribute="top" secondItem="u2U-pk-LYo" secondAttribute="bottom" constant="8" id="8Zm-Hh-kgy"/>
-                                    <constraint firstItem="Wtg-NP-5ZY" firstAttribute="top" secondItem="2oc-NB-jfh" secondAttribute="bottom" constant="8" symbolic="YES" id="8gx-fp-Gcs"/>
                                     <constraint firstItem="7qp-tH-iKd" firstAttribute="top" secondItem="fBU-ZF-S7F" secondAttribute="bottom" constant="7" id="9BW-CZ-v2S"/>
                                     <constraint firstItem="wQQ-bG-deT" firstAttribute="leading" secondItem="4tA-2F-2lf" secondAttribute="leading" constant="30" id="Bik-YD-w5X"/>
                                     <constraint firstItem="wQQ-bG-deT" firstAttribute="top" secondItem="LLV-67-hTM" secondAttribute="bottom" constant="6.6699999999999999" id="E2k-aa-Per"/>
@@ -238,18 +237,18 @@
                                     <constraint firstAttribute="trailing" secondItem="LLV-67-hTM" secondAttribute="trailing" constant="25" id="Gur-0t-jda"/>
                                     <constraint firstAttribute="trailing" secondItem="CaE-4A-BdR" secondAttribute="trailing" constant="25" id="IL0-gH-UlR"/>
                                     <constraint firstAttribute="trailing" secondItem="Wtg-NP-5ZY" secondAttribute="trailing" constant="25" id="MKP-d2-5SI"/>
-                                    <constraint firstItem="2oc-NB-jfh" firstAttribute="leading" secondItem="Wtg-NP-5ZY" secondAttribute="leading" id="MNI-lz-xXh"/>
                                     <constraint firstAttribute="trailing" secondItem="Ap7-3s-jT5" secondAttribute="trailing" constant="25" id="Njy-ek-5qg"/>
                                     <constraint firstAttribute="trailing" secondItem="FRU-kL-ShZ" secondAttribute="trailing" constant="36" id="Omf-5e-R8y"/>
                                     <constraint firstAttribute="trailing" secondItem="cfB-4U-ZcF" secondAttribute="trailing" constant="25" id="Pig-N3-W70"/>
-                                    <constraint firstItem="2oc-NB-jfh" firstAttribute="top" secondItem="ViU-P6-7Tf" secondAttribute="bottom" constant="17" id="Q02-4b-vnh"/>
                                     <constraint firstAttribute="trailing" secondItem="wQQ-bG-deT" secondAttribute="trailing" constant="25" id="Q9U-SA-TS6"/>
                                     <constraint firstAttribute="trailing" secondItem="FwZ-C2-4L8" secondAttribute="trailing" constant="25" id="SKc-nd-HVM"/>
                                     <constraint firstItem="LLV-67-hTM" firstAttribute="leading" secondItem="4tA-2F-2lf" secondAttribute="leading" constant="30" id="XGR-hJ-v7J"/>
                                     <constraint firstItem="u2U-pk-LYo" firstAttribute="leading" secondItem="ViU-P6-7Tf" secondAttribute="trailing" constant="21" id="b0o-r0-vJU"/>
+                                    <constraint firstItem="2oc-NB-jfh" firstAttribute="top" secondItem="ViU-P6-7Tf" secondAttribute="bottom" constant="17" id="dWK-Pe-vRI"/>
                                     <constraint firstItem="7qp-tH-iKd" firstAttribute="leading" secondItem="4tA-2F-2lf" secondAttribute="leading" constant="30" id="daW-dC-3BP"/>
                                     <constraint firstAttribute="trailing" secondItem="u2U-pk-LYo" secondAttribute="trailing" constant="25" id="ewn-Qg-A1E"/>
                                     <constraint firstItem="FwZ-C2-4L8" firstAttribute="leading" secondItem="ViU-P6-7Tf" secondAttribute="trailing" constant="21" id="i69-Yg-94L"/>
+                                    <constraint firstItem="2oc-NB-jfh" firstAttribute="trailing" secondItem="Wtg-NP-5ZY" secondAttribute="trailing" id="jDv-dJ-McN"/>
                                     <constraint firstItem="fBU-ZF-S7F" firstAttribute="top" secondItem="Wtg-NP-5ZY" secondAttribute="bottom" constant="38" id="k4a-Rs-8uZ"/>
                                     <constraint firstAttribute="trailing" secondItem="vQJ-XQ-wrg" secondAttribute="trailing" constant="25" id="klM-da-4Sh"/>
                                     <constraint firstItem="CaE-4A-BdR" firstAttribute="leading" secondItem="ViU-P6-7Tf" secondAttribute="trailing" constant="21" id="lYp-Jf-DHi"/>
@@ -257,9 +256,11 @@
                                     <constraint firstItem="fBU-ZF-S7F" firstAttribute="leading" secondItem="7qp-tH-iKd" secondAttribute="leading" id="mf8-vQ-Dmr"/>
                                     <constraint firstItem="cfB-4U-ZcF" firstAttribute="leading" secondItem="ViU-P6-7Tf" secondAttribute="trailing" constant="21" id="mh8-z6-Z4e"/>
                                     <constraint firstAttribute="trailing" secondItem="7qp-tH-iKd" secondAttribute="trailing" constant="25" id="pmN-cM-kLs"/>
+                                    <constraint firstItem="Wtg-NP-5ZY" firstAttribute="top" secondItem="2oc-NB-jfh" secondAttribute="bottom" constant="8" symbolic="YES" id="qFy-ei-mv6"/>
                                     <constraint firstItem="Wtg-NP-5ZY" firstAttribute="leading" secondItem="4tA-2F-2lf" secondAttribute="leading" constant="30" id="qv8-tT-qP8"/>
                                     <constraint firstItem="Ap7-3s-jT5" firstAttribute="leading" secondItem="4tA-2F-2lf" secondAttribute="leading" constant="30" id="rcB-uO-ht4"/>
                                     <constraint firstItem="LLV-67-hTM" firstAttribute="top" secondItem="7qp-tH-iKd" secondAttribute="bottom" constant="30.670000000000002" id="tRg-Lj-ETg"/>
+                                    <constraint firstItem="2oc-NB-jfh" firstAttribute="leading" secondItem="Wtg-NP-5ZY" secondAttribute="leading" id="v5J-w7-L0e"/>
                                     <constraint firstItem="u2U-pk-LYo" firstAttribute="top" secondItem="FRU-kL-ShZ" secondAttribute="bottom" constant="20" id="wJV-PH-JEC"/>
                                     <constraint firstAttribute="bottom" secondItem="FRU-kL-ShZ" secondAttribute="bottom" constant="570" id="wZa-aU-MCR"/>
                                     <constraint firstItem="FwZ-C2-4L8" firstAttribute="top" secondItem="CaE-4A-BdR" secondAttribute="bottom" constant="2.6666666666666572" id="zMM-1S-RF4"/>
@@ -271,6 +272,9 @@
                                 <state key="normal" title="Delete">
                                     <color key="titleColor" red="0.99118012189865112" green="0.14612841606140137" blue="0.047593645751476288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onDeletePressedWithSender:" destination="jrS-D5-vrD" eventType="primaryActionTriggered" id="fbg-Zo-bKK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>

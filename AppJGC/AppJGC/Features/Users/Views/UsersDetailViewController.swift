@@ -61,7 +61,6 @@ class UsersDetailViewController: UIViewController {
     }
 }
 
-
 extension UsersDetailViewController:  UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

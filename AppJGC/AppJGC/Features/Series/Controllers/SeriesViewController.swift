@@ -72,4 +72,3 @@ extension SeriesViewController:  UICollectionViewDelegate, UICollectionViewDataS
         return itemSpacing
     }
 }
-

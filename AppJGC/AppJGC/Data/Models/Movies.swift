@@ -8,7 +8,7 @@
 
 import Foundation
 class Movies: CustomStringConvertible {
-    //Properties whit optional '?' value can be nil
+    
     var photo: String?
     var name: String?
     var review: String?

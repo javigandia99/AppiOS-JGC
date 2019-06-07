@@ -36,9 +36,10 @@ class SeriesViewController: UIViewController{
             else {
                 return
         }
-        let selected = defaultSeries[cellPosition.row]
+        let selected = mSeries?[cellPosition.row]
         viewController.delegate = self
-        viewController.set(data: selected)
+        guard let sel = selected else { return  }
+        viewController.set(data: sel)
         
         
     }
